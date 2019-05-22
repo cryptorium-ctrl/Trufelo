@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+  height: 4rem;
+  margin-top: -4rem;
+  content: "";
+  display: block;
+} 
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+  padding-right: 30rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+}
+.navbar-brand img {
+  height: 5rem;
+}
+
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 2rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #f2a949;
+}
+.navbar.solid {
+  background: rgba(0, 0, 0, 0.7)!important;
+  transition: background-color 1s ease 0s;
+}
+
+#summer-truffle {
+  margin-top: -5rem;
+  margin-left: -20rem;
+  height: 30rem;
+  width: 30rem;
+}
+
+#description-row {
+  margin-left: -25rem;
+}
+
+#related-recipes {
+  width: 25rem;
+  height: 25rem;
+}
+
+
+
+/*============= LANDING PAGE =============*/
+
+.home-inner {
+
+  background-image: url("../assets/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg");
+
+
+}
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
+  z-index: 1;
+}
+.caption h1 {
+  color: white;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.caption h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 2rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: .8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block!important;
+}
+
+#shop-now-button {
+  margin-top: 25rem;
+}
+
+.col.dark {
+  width: 30rem;
+  height: 100rem;
+}
+
+.no-padding2 {
+  padding-right: 30rem;
+  padding-left: 20rem;
+}
+
+#related-recipes2 {
+  height: 30rem;
+  width: 69.6rem;
+}
+
+.heading-recipes {
+  padding-left: 21rem;
+  font-weight: 700;
+  color: black;
+
+}
+
+/*============= RECIPES SECTION =============*/
+
+/*====== HOVER ======*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  padding: 2em 0;
+  margin-top: 20rem;
+  width: 10rem;
+  line-height:0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*=== END HOVER====*/
+
+img.modal-images {
+ height: auto;
+  width: auto;
+}
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-sm {
+  border-width: medium;
+  border-radius: 0;
+  padding: .5rem .1rem;
+  font-size: .9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.btn-turquoise {
+  border-color: #f2a949;
+  background-color: #f2a949;
+  color: white;
+}
+.btn-turquoise:hover,
+.btn-turquoise:focus {
+  border-color: #f2a949;
+  background-color: #f2a949;
+  color: white;
+}
+.jumbotron {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 1rem 0 3rem;
+}
+h3.heading {
+  padding-top: 5rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.9rem;
+}
+
+h4.heading {
+  padding-top: 2rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #f2a949;
+  margin: 0 auto 2rem;
+}
+.feature {
+  text-align: center;
+}
+.feature .fa-layers {
+  color: #f2a949;
+  margin: 0 auto;
+  width: 3.9rem;
+  height: 6rem;
+}
+.feature h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.feature p {
+  font-size: 1.1rem;
+}
+
+#fresh-heading {
+  margin: 10rem;
+}
+
+#add-to-basket:hover {
+  background-color: white;
+  color: #f2a949;
+}
+
+#bold {
+  font-weight: 700;
+}
+/*===== FIXED BACKGROUND IMG DARK =====*/
+
+.fixed-background {
+  background-image: url('../assets/img/fresh-truffles/WhatIsTruffle_01-1920x1080.jpg');
+  z-index: -1;
+  height: 60.6rem;
+}
+.dark {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 7rem 2rem;
+  text-align: center;
+  z-index: 1000!important;
+  height: 60.6rem;
+}
+.dark h3, .dark p {
+  color: #E9ECEF;
+}
+
+/*============= SHOP ONLINE SECTION =============*/
+
+/*=== MODAL ===*/
+
+
+#products-row {
+  margin-top: -10rem;
+  padding-left: 10rem;
+}
+
+.row.padding {
+  padding: 2rem 0 5rem;
+}
+img.example-image {
+  /* margin-left: 10rem; */
+  max-width: 80%;
+  max-height: 80%;
+}
+
+img.recipes-image {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+.row.no-padding [class*=col-] {
+  padding: 2rem;
+}
+.portfolio-item img:hover {
+  transform: scale(1.3);
+  cursor: zoom-in;
+}
+.portfolio-item img {
+  transition: transform .4s ease;
+}
+.portfolio-item {
+  overflow: hidden;
+}
+
+/*============= ABOUT US SECTION FIXED BG IMG LIGHT =============*/
+
+#about-us {
+  margin-top: 1rem;
+}
+
+#about-us-heading {
+  margin-top: 1rem;
+}
+
+.light {
+  background-color: rgba( 255, 255, 255, .85);
+  padding: 3rem 2rem 2rem;
+  z-index: 1000!important;
+}
+.card {
+  border-radius: 0;
+  border: .1rem solid rgba(0, 0, 0, .075);
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+  margin: 0 1rem;
+  transition: transform .4s ease;
+}
+.card-img-top {
+  border-radius: 0;
+}
+.card:hover {
+  transform: scale(.95);
+}
+.card h4 {
+  font-weight: 700;
+}
+.card h5 {
+  color: #1ebba3;
+}
+.card p {
+  border-top: .1rem solid rgba(0, 0, 0, .1);
+  border-bottom: .1rem solid rgba(0, 0, 0, .1);
+  padding: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.card svg.svg-inline--fa {
+  color: #f2a949!important;
+  font-size: 1.3rem;
+  width: 2rem;
+}
+.card svg.svg-inline--fa:hover {
+  color: #6c757d!important;
+}
+.owl-dot.active span,
+.owl-dot:hover span {
+  background: #1ebba3!important;
+}
+
+
+/*============= CONTACT SECTION =============*/
+
+
+
+#contacts-row {
+  height: 60.55rem;
+  margin-top: 6.6rem;
+  padding-top: 28rem;
+}
+
+footer {
+  background: url('../assets/img/fresh-truffles/portada-web-jpg.jpg') no-repeat;
+  background-color: #40474e;
+  background-size: cover;
+  color: white;
+}
+footer .row {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 2rem 3rem;
+}
+footer img {
+  height: 5rem;
+  margin: 1.5rem 0;
+}
+footer a {
+  color: white;
+}
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+  color: #f2a949!important;
+}
+footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+/*--- Contact Form --*/
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background-color: #53595f;
+  border-radius: 0;
+  border: .15rem solid #666b71;
+  color: white!important;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  background: #53595f;
+  border: .15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8!important;
+}
+input.btn {
+  cursor: pointer;
+}
+hr.socket {
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+
+/*============= CART PAGE ==============*/
+
+.shopping-cart {
+  padding-left: 5rem;
+}
+
+.shopping-cart img {
+  height: 15rem;
+  width: 15rem;
+  margin-left: -10rem;
+  margin-top: -2rem;
+}
+
+
+.quantity {
+  float: left;
+  margin-right: 15px;
+  background-color: #eee;
+  position: relative;
+  width: 80px;
+  overflow: hidden
+}
+
+.quantity input {
+  margin: 0;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  float: right;
+  color: #000;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  background-color: #F6F6F6
+}
+
+.quantity input.qty {
+  position: relative;
+  border: 0;
+  width: 100%;
+  height: 40px;
+  padding: 10px 25px 10px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 0;
+  background-clip: padding-box
+}
+
+.quantity .minus, .quantity .plus {
+  line-height: 0;
+  background-clip: padding-box;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-background-size: 6px 30px;
+  -moz-background-size: 6px 30px;
+  color: #bbb;
+  font-size: 20px;
+  position: absolute;
+  height: 50%;
+  border: 0;
+  right: 0;
+  padding: 0;
+  width: 25px;
+  z-index: 3
+}
+
+.quantity .minus:hover, .quantity .plus:hover {
+  background-color: #dad8da
+}
+
+.quantity .minus {
+  bottom: 0
+}
+
+#shopping-cart-checkout{
+  margin-top: -4.6rem;
+}
+
+#total-price {
+  margin-top: -1rem;
+}
+
+.card-footer {
+  margin-top: 3rem;
+}
+
+/*============= CHECKOUT PAGE =============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============= STRIPE =================*/
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+.StripeElement {
+  background-color: white;
+  padding: 16px 16px;
+  border: 1px solid #ccc;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+#card-errors {
+  color: red;
+}
+
+/*============= TOP SCROLL =============*/
+
+.top-scroll svg.svg-inline--fa {
+  font-size: 3rem;
+  height: 1.7rem;
+  color: #53595f;
+  background: white;
+}
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: .3;
+  z-index: 1000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: .5;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991px) {
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.8rem;
+  }
+  #fixed {
+    background-image: url('/public/assets/img/fresh-truffles/truffle.png');
+  }
+  #fixed-2 {
+    background-image: url('/public/assets/img/fresh-truffles/truffle.png');
+  }
+  footer {
+    background: url('/public/assets/img/fresh-truffles/truffle.png') no-repeat;
+  }
+  .clients img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+  .narrow {
+    width: 85%;
+  }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

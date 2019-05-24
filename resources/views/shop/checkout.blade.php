@@ -22,14 +22,31 @@
 </head>
 
 <body>
+
+@if (session()->has('success_message'))
+    <div class="alert alert-success" id="alert-message">
+        {{session()->get('success_message')}}
+    </div>
+@endif
+
+@if(count($errors) > 0 )
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+
+    </div>
+@endif
+
 <div class="loader"></div>
 <main id="main" role="main">
     <section id="checkout-banner">
         <div class="container py-5 text-center">
             <i class="fa fa-credit-card fa-3x text-light"></i>
             <h2 class="my-3">Checkout form</h2>
-            <p class="lead">Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation
-                state that can be triggered by attempting to submit the form without completing it.</p>
         </div>
     </section>
 
@@ -40,6 +57,11 @@
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
                         <span class="text-muted">Your cart</span>
                         {{Cart::instance('default')->count()}}
+                        @if(Cart::count() == 1)
+                        item
+                            @else
+                        items
+                           @endif
                         <span class="badge badge-secondary badge-pill"></span>
                     </h4>
 
@@ -59,20 +81,20 @@
                         <li class="list-group-item d-flex justify-content-between bg-light">
                             <div class="text-success">
                                 <h6 class="my-0">Promo code</h6>
-                                <small>EXAMPLECODE</small>
+                                <small>{{session()->get('coupon')['name']}}</small>
                             </div>
-                            <span class="text-success">-$5</span>
+                            <span class="text-success">{{session()->get('coupon')['discount']}}</span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <span>Total Price</span>
-                            <strong>{{Cart::subtotal()}}</strong>
+                            <strong>{{Cart::subtotal() - session()->get('coupon')['discount']}}</strong>
                         </li>
                     </ul>
-                    <form class="card p-2">
-                        {{--                        {{csrf_field()}}--}}
+                    <form class="card p-2" action="{{route('coupon.store')}}" method="POST">
+                                                {{csrf_field()}}
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <div class="input-group-append">
+                            <input type="text" class="form-control" placeholder="Promo code" name="coupon_code" id="coupon_code">
+                        <div class="input-group-append">
                                 <button type="submit" class="btn btn-secondary">Redeem</button>
                             </div>
                         </div>
@@ -209,8 +231,8 @@
                                 <div id="card-errors" role="alert"></div>
 
                                 <hr class="mb-4">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">
-                                    <i class="fa fa-credit-card"></i> Complete Order</button>
+                                <a class="btn btn-primary btn-lg btn-block" type="submit" href="complete">
+                                    <i class="fa fa-credit-card"></i> Complete Order</a>
                             </div>
                         </div>
                     </form>
@@ -224,23 +246,23 @@
             <div class="row">
                 <div class="col col-md-3 d-flex mb-2">
                     <div class="card">
-                        <img class="card-img-top img-fluid border-bottom" src="img/item-1.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid border-bottom" src="" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Ladies Sandal</h5>
-                            <p class="card-text">Exhibit a great fashion sense wearing these heels from the house of O.T. Collection.
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
                             </p>
-                            <a href="#" class="btn btn-success">$23.99</a>
+                            <a href="#" class="btn btn-success"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-3 d-flex mb-2">
                     <div class="card">
-                        <img class="card-img-top img-fluid border-bottom" src="img/item-2.jpg" alt="Card image cap">
+                        <img class="card-img-top img-fluid border-bottom" src="" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Gents Shoes</h5>
-                            <p class="card-text">Make the rest look at you in admiration as you make your way by wearing these van sneakers
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
                                 from ASB.</p>
-                            <a href="#" class="btn btn-success">$45.50</a>
+                            <a href="#" class="btn btn-success"></a>
                         </div>
                     </div>
                 </div>
@@ -248,21 +270,20 @@
                     <div class="card">
                         <img class="card-img-top img-fluid border-bottom" src="img/item-3.jpeg" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Ladies Sandal</h5>
-                            <p class="card-text">Exhibit a great fashion sense wearing these heels from the house of O.T. Collection.
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">
                             </p>
-                            <a href="#" class="btn btn-success">$53.99</a>
+                            <a href="#" class="btn btn-success"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-3 d-flex mb-2">
                     <div class="card">
-                        <img class="card-img-top img-fluid border-bottom" src="img/item-4.jpeg" alt="Card image cap">
+                        <img class="card-img-top img-fluid border-bottom" src="" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Gents Shoes</h5>
-                            <p class="card-text">Make the rest look at you in admiration as you make your way by wearing these van sneakers
-                                from ASB.</p>
-                            <a href="#" class="btn btn-success">$95.50</a>
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-success"></a>
                         </div>
                     </div>
                 </div>
@@ -274,42 +295,7 @@
     </a>
 </main>
 <!-- Footer -->
-<footer id="footer">
-    <p class="copyright">Made with
-        <i class="fa fa-heart"></i> By
-        <a target="_blank" title="Orbit Themes" href="http://www.orbitthemes.com">Orbit Themes</a> &copy;
-        <span id="currentYear"></span> All Rights Reserved.
-    </p>
-    <div class="social">
-        <a traget="_blank" href="https://facebook.com/orbitthemes" title="facebook">
-            <i class="fa fa-facebook"></i>
-        </a>
-        <a traget="_blank" href="https://twitter.com/orbitthemes" title="twitter">
-            <i class="fa fa-twitter"></i>
-        </a>
-        <a traget="_blank" href="https://plus.google.com/+orbitthemes" title="Google+" target="_blank">
-            <i class="fa fa-google-plus"></i>
-        </a>
-        <a traget="_blank" href="https://github.com/orbitthemes" title="github" target="_blank">
-            <i class="fa fa-github"></i>
-        </a>
-        <a traget="_blank" href="https://www.behance.net/orbitthemes" title="Behance" target="_blank">
-            <i class="fa fa-behance"></i>
-        </a>
-        <a traget="_blank" href="https://dribbble.com/orbitthemes" title="Dribbble" target="_blank">
-            <i class="fa fa-dribbble"></i>
-        </a>
-        <a traget="_blank" href="https://www.pinterest.com/orbitThemes/" title="Pinterest" target="_blank">
-            <i class="fa fa-pinterest"></i>
-        </a>
-        <a traget="_blank" href="https://www.reddit.com/user/orbitthemes" title="Reddit" target="_blank">
-            <i class="fa fa-reddit"></i>
-        </a>
-        <a traget="_blank" href="https://orbitthemes.com/blog/" title="RSS" target="_blank">
-            <i class="fa fa-rss"></i>
-        </a>
-    </div>
-</footer>
+
 
 @yield('scripts')
 <script src="https://js.stripe.com/v3/"></script>

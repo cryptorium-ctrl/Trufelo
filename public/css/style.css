@@ -76,8 +76,8 @@ body {
 /*============= LANDING PAGE =============*/
 
 .home-inner {
-
   background-image: url("../assets/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg");
+  /*background-image: {{route('assets/img/fresh0truffles/EW20180223_TruffleHunter-6.jpg')}};*/
 
 
 }
@@ -499,6 +499,10 @@ hr.socket {
 }
 
 /*============= CART PAGE ==============*/
+
+#alert-message {
+  margin-left: 25rem;
+}
 
 .shopping-cart {
   padding-left: 5rem;

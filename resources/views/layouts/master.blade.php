@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title')s</title>
+    <title>@yield('title')</title>
     @yield('styles')
 
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/arrow.css">
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="stylesheet" href="css/waypoints.css">
-    {{--<link rel="stylesheet" href="css/styles.css">--}}
+{{--    <link rel="stylesheet" href="css/styles.css">--}}
 
 
 </head>
@@ -28,8 +28,7 @@
 @yield('content')
 
 <!--- Start Landing Page Image -->
-
-
+<div class="scrollify">
 <div class="landing">
     <div class="home-wrap">
         <div class="home-inner">
@@ -95,7 +94,7 @@
 
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="../public/assets/img/oil/white-truffle-oil.jpg" alt=""
+                    <img class="img-responsive" src="../public/assets/img/oil/truffle-oil.jpg" alt=""
                          style="height: 40rem; width: 40rem;">
                     <div class="overlay">
                         <h2>TRUFFLED PRODUCTS</h2>
@@ -369,7 +368,6 @@
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="node_modules/jquery-scrollify/jquery.scrollify.js"></script>
 <script type="text/javascript" src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
 <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 {{--<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>--}}
@@ -400,7 +398,7 @@
 
 
 <!--- End of Script Source Files -->
-@yield('scripts')
+{{--@yield('scripts')--}}
 </body>
 
 </html>

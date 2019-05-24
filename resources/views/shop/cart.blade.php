@@ -8,6 +8,7 @@
     <title>@yield('title')</title>
     @yield('styles')
 
+    @yield('')
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -30,23 +31,23 @@
 
 
 <div class="row" style="padding-top: 10rem;">
-    <div class="col-12-md">
-        <div>
+
+        <div class="col-4-md">
             @if (session()->has('success_message'))
-                <div class="alert alert-success">
+                <div class="alert alert-success" id="alert-message">
                     {{session()->get('success_message')}}
                 </div>
             @endif
 
             @if(count($errors) > 0 )
-                <div class="alert alert-success">
+                <div class="alert alert-danger">
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{$error}}</li>
                         @endforeach
                     </ul>
                 </div>
-        </div>
+
     </div>
     @endif
 </div>
@@ -60,12 +61,20 @@
     @foreach (Cart::content() as $item)
 
         <script src="https://use.fontawesome.com/c560c025cf.js"></script>
+        <h2 id="alert-message">
+            {{ Cart::count() }}
+            @if(Cart::count() == 1)
+                item
+            @else
+                items
+            @endif
+            </h2>
         <div class="container">
             <div class="">
                 <div class="card-header bg-dark text-light">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     Shopping cart
-                    <a href="{{route('shop.allfresh')}}" class="btn btn-outline-light btn-sm pull-right">Continue shopping</a>
+                    <a href="{{route('shop.fresh-summer')}}" class="btn btn-outline-light btn-sm pull-right">Continue shopping</a>
                     <div class="clearfix"></div>
                 </div>
                 <div class="card-body">
@@ -83,14 +92,15 @@
                         </div>
                         <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
                             <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
-                                {{--                        <h6><strong>Price: {{$item->model->price}}<span class="text-muted">x</span></strong></h6>--}}
+                                                        <h6><strong>Price: {{$item->model->price}}<span class="text-muted">€</span></strong></h6>
                             </div>
                             <div class="col-4 col-sm-4 col-md-4">
-                                {{--                        <div class="quantity" data-id="{{$item->rowId}}">--}}
-                                <input type="button" value="+" class="plus">
-                                <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
-                                       size="4">
-                                <input type="button" value="-" class="minus">
+                            <div>
+                                <select class="quantity" data-id="{{$item->rowId}}">
+                                    @for($i = 1; $i < 5 + 1; $i++)
+                                        <option {{$item->qty == $i ? 'selected' : ''}}>{{$i}}</option>
+                                        @endfor
+                                </select>
                             </div>
                         </div>
                         <div class="col-2 col-sm-2 col-md-2 text-right">
@@ -106,27 +116,11 @@
                 </div>
                 <hr>
                 <!-- END PRODUCT -->
-                <div class="">
-                    <a href="" class="btn btn-outline-secondary pull-right">
-                        Update shopping cart
-                    </a>
-                </div>
             </div>
-            <div class="card-footer">
-                <div class="coupon col-md-5 col-sm-5 no-padding-left ">
-                    <div class="row">
-                        <div class="col-6">
-                                                    <input type="text" class="form-control" placeholder="Coupon code">
-                        </div>
-                        <div class="col-6">
-                                                    <input type="submit" class="btn btn-outline-dark" value="Use Coupon">
-                        </div>
-                    </div>
-                </div>
                 <div class="">
                     <a href="{{route('shop.checkout')}}" class="btn btn-turquoise pull-right" id="shopping-cart-checkout">Checkout</a>
                     <div class="pull-right" id="total-price">
-                        Total price: <b>50.00€</b>
+                        Total price: <b>{{Cart::subtotal()}}€</b>
                     </div>
                 </div>
             </div>
@@ -138,8 +132,8 @@
     @endforeach
 @else
 
-    <h3>No Items In Cart</h3>
-    <a href="{{route('shop.allfresh')}}" class="btn btn-turquoise">Continue Shopping</a>
+    <h3 id="alert-message">No Items In Cart</h3>
+    <a href="{{route('shop.fresh-summer')}}" class="btn btn-turquoise" id="alert-message">Continue Shopping</a>
 @endif  <!-- End of Check if Cart is Empty -->
 
 
@@ -155,14 +149,14 @@
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="node_modules/jquery-scrollify/jquery.scrollify.js"></script>
-<script type="text/javascript" src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
+{{--<script src="node_modules/jquery-scrollify/jquery.scrollify.js"></script>--}}
+{{--<script type="text/javascript" src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>--}}
 <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/waypoints.js"></script>
-<script src="js/lightbox.js"></script>
+{{--<script src="js/lightbox.js"></script>--}}
 <script src="js/owl.carousel.js"></script>
 <script src="js/jquery.counterup.js"></script>
 <script src="js/validator.js"></script>
@@ -182,8 +176,8 @@
 {{--    })--}}
 {{--</script>--}}
 
-
-<script src="{{asset('js/app.js')}}"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+{{--<script src="{{asset('js/app.js')}}"></script>--}}
 <script>
     (function () {
         const classname = document.querySelectorAll('.quantity')
@@ -191,14 +185,17 @@
         Array.from(classname).forEach(function(element) {
             element.addEventListener('change', function () {
                 const id = element.getAttribute('data-id')
-                axios.patch('cart/${id}', {
-                    quantity: this.value
+                axios.patch(`cart/${id}`, {
+                    quantity: this.value,
+
                 })
                     .then(function (response) {
-                        console.log(response);
+                        window.location.href = '{{route('cart.index')}}'
+
                     })
                     .catch(function (error) {
                         console.log(error);
+                        window.location.href = '{{route('cart.index')}}'
                     });
             })
         })

@@ -122,8 +122,8 @@
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="node_modules/jquery-scrollify/jquery.scrollify.js"></script>
-<script type="text/javascript" src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
+{{--<script src="node_modules/jquery-scrollify/jquery.scrollify.js"></script>--}}
+{{--<script type="text/javascript" src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>--}}
 <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
 <script src="js/custom.js"></script>

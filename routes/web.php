@@ -28,6 +28,10 @@ Route::get('/allfresh', function () {
     return view ('shop.allfresh');
 });
 
+Route::get('/complete', function () {
+    return view ('shop.complete');
+});
+
 
 Route::get('/index', function () {
     return view ('shop.index');
@@ -47,15 +51,25 @@ Route::get('empty', function(){
     Cart::destroy();
 });
 
+
 Route::delete('/cart/{product}', 'CartController@destroy')->name('cart.destroy');
+Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
+
 
 Route::get('/allfresh', 'ProductsController@index')->name('shop.allfresh');
 
-Route::get('/checkout', 'CheckoutController@index')->name('shop.checkout');
 
+Route::get('/checkout', 'CheckoutController@index')->name('shop.checkout');
 Route::post('/checkout', 'CheckoutController@store')->name('shop.store');
 
-Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
+
+Route::post('/coupon', 'CouponsController@store')->name('coupon.store');
+Route::delete('/coupon', 'CouponsController@destroy')->name('coupon.destroy');
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

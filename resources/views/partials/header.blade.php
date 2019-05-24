@@ -6,6 +6,7 @@
 
     <!--- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
+
         <div class="container-fluid">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" >

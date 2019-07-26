@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+.card {
+  //FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  margin-top: 40vh;
+
+  &__side {
+    background-color: $color-white;
+    color: #fff;
+    font-size: 2rem;
+
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &--front {
+      background-color: $color-gray-light-1;
+    }
+
+    &--back {
+      background-color: #fff;
+      transform: rotateY(180deg);
+
+      &--button-box {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      &-1 {
+        background-image: linear-gradient(
+                        to right bottom,
+                        $color-black,
+                        $color-primary-light
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+                        to right bottom,
+                        $color-primary-light,
+                        $color-primary-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  //FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+
+    &--1 {
+      background-image: linear-gradient(
+                      to right top,
+                      rgba(189, 150, 42, 0.1),
+                      rgba(189, 150, 42, 0.3)
+      ),
+      url('../img/truffle.jpg');
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+                      to right top,
+                      rgba(189, 150, 42, 0.35),
+                      rgba(189, 150, 42, 0.3)
+      ),
+      url('../img/truffle.jpg');
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+                      to right top,
+                      rgba(189, 150, 42, 0.1),
+                      rgba(189, 150, 42, 0.3)
+      ),
+      url('../img/truffle.jpg');
+
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-breal: clone;
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+                      to right bottom,
+                      rgba($color-secondary-light, 0.85),
+                      rgba($color-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+                      to right bottom,
+                      rgba($color-secondary-light, 0.85),
+                      rgba($color-secondary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+                      to right bottom,
+                      rgba($color-secondary-light, 0.85),
+                      rgba($color-secondary-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    &-arrow {
+      height: 40px;
+      width: 40px;
+      background-image: linear-gradient(
+                      to right bottom,
+                      $color-secondary-light,
+                      $color-secondary-dark
+      );
+      border-radius: 50%;
+      // display: inline-block;
+      margin-top: 0;
+      margin-left: 45%;
+      position: absolute;
+
+      animation-name: bounceUp;
+      animation-duration: 1.5s;
+      animation-delay: 2s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+
+      &-pic {
+        height: 2rem;
+        margin-top: 25%;
+      }
+    }
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Lato;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin: 1rem 1rem;
+        color: $color-gray-dark;
+        position: relative;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-gray-light-2;
+        }
+      }
+    }
+  }
+
+  //BACK SIDE
+}

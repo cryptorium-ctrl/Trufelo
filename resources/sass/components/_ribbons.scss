@@ -1,0 +1,36 @@
+.corner-ribbon{
+  width: 20rem;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 5rem;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+
+
+  &__sticky {
+    position: fixed;
+  }
+
+  &__top-right {
+    top: 25px;
+    right: -50px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  &__red {
+    background: $color-secondary-dark;
+  }
+
+  &__shadow {
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+  }
+}
+
+/* Different positions */
+
+

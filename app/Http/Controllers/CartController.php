@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Products;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
@@ -16,6 +17,7 @@ class  CartController extends Controller
     {
         return view('shop.cart');
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -40,7 +42,7 @@ class  CartController extends Controller
         });
 
         if($duplicates->isNotEmpty()) {
-            return redirect()->route('cart.index')->with('success_message', 'Item is already added');
+            return redirect()->route('cart.index')->with('success_message', 'Item is already added to your cart!');
         }
 
         Cart::add($request->id, $request->name, 1, $request->price)

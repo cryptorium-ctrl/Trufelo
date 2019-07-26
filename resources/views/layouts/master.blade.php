@@ -82,11 +82,11 @@
 
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="../public/assets/img/fresh-truffles/3480_2_.jpg" alt=""
+                    <img class="img-fluid" src="../public/assets/img/fresh-truffles/3480_2_.jpg" alt=""
                          style="height: 40rem; width: 40rem;">
                     <div class="overlay">
                         <h2>fresh truffles</h2>
-                        <a class="btn btn-outline-light btn-sm" href="allfresh" id="shop-online-button">buy now</a>
+                        <a class="btn btn-outline-light btn-sm" href="{{route('shop.allfresh')}}" id="shop-online-button">buy now</a>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
 
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="../public/assets/img/oil/truffle-oil.jpg" alt=""
+                    <img class="img-fluid" src="../public/assets/img/oil/truffle-oil.jpg" alt=""
                          style="height: 40rem; width: 40rem;">
                     <div class="overlay">
                         <h2>TRUFFLED PRODUCTS</h2>
@@ -105,7 +105,7 @@
 
             <div class="col-md-4">
                 <div class="hovereffect">
-                    <img class="img-responsive" src="../public/assets/img/packages/oil-package.jpg" alt=""
+                    <img class="img-fluid" src="../public/assets/img/packages/oil-package.jpg" alt=""
                          style="height: 40rem; width: 40rem;">
                     <div class="overlay">
                         <h2>truffle packages</h2>
@@ -304,11 +304,6 @@
                     <p>100 Street Name<br>Our City, AA 10000</p>
                     <strong>Contact Info</strong>
                     <p>(888) 888-8888<br>email@nuno.com</p>
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-reddit-square"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
 
                 <div class="col-md-7">
@@ -341,7 +336,6 @@
                     </form>
 
                 </div>
-
                 <hr class="socket">
                 &copy; Trufelo.
             </div>
@@ -351,8 +345,7 @@
 
 </div>
 <!--- End of Row -->
-</footer>
-<!--- End of Footer -->
+
 
 </div>
 
@@ -368,9 +361,9 @@
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
+<script src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
 <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-{{--<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>--}}
+<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/waypoints.js"></script>

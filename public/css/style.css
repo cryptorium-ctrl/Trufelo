@@ -1,149 +1,98 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+/*============= SHOP ONLINE SECTION ============*/
 
-body {
-  overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
-  color: #505962;
-}
-
-
-/*--- Nav Scrolling Offset --*/
-.offset:before {
-  height: 4rem;
-  margin-top: -4rem;
-  content: "";
-  display: block;
-} 
-
-/*--- Extra Bootstrap Column Padding --*/
-[class*="col-"] {
-  padding: 1rem;
-}
-
-/*============= NAVIGATION =============*/
-
-.navbar {
-  padding-right: 30rem;
-  text-transform: uppercase;
-  font-size: .9rem;
-  font-weight: 700;
-  letter-spacing: .1rem;
-  transition: background-color .5s ease 0s;
-}
-.navbar-brand img {
-  height: 5rem;
-}
-
-.svg-inline--fa.fa-w-14 {
-  color: white;
-  font-size: 1.6rem;
-}
-.navbar-nav li {
-  padding-right: .8rem;
-}
-.navbar-nav .nav-link {
-  color: white;
-  padding-top: 2rem;
-}
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-  color: #f2a949;
-}
-.navbar.solid {
-  background: rgba(0, 0, 0, 0.7)!important;
-  transition: background-color 1s ease 0s;
-}
-
-#summer-truffle {
-  margin-top: -5rem;
-  margin-left: -20rem;
-  height: 30rem;
-  width: 30rem;
-}
-
-#description-row {
-  margin-left: -25rem;
-}
-
-#related-recipes {
-  width: 25rem;
-  height: 25rem;
-}
-
-
-
-/*============= LANDING PAGE =============*/
-
-.home-inner {
-  background-image: url("../assets/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg");
-  /*background-image: {{route('assets/img/fresh0truffles/EW20180223_TruffleHunter-6.jpg')}};*/
-
-
-}
-.caption {
-  width: 100%;
-  max-width: 100%;
-  position: absolute;
-  top: 38%;
-  z-index: 1;
-}
-.caption h1 {
-  color: white;
-  font-size: 4.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: .3rem;
-  text-shadow: .1rem .1rem .8rem black;
-  padding-bottom: 1rem;
-}
-.caption h3 {
-  color: white;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-shadow: .1rem .1rem .5rem black;
-  padding-bottom: 2rem;
-}
-.btn-lg {
-  border-width: medium;
-  border-radius: 0;
-  padding: .8rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: inline-block!important;
-}
-
-#shop-now-button {
-  margin-top: 25rem;
-}
-
-.col.dark {
-  width: 30rem;
-  height: 100rem;
-}
-
-.no-padding2 {
-  padding-right: 30rem;
-  padding-left: 20rem;
-}
-
-#related-recipes2 {
-  height: 30rem;
-  width: 69.6rem;
-}
-
-.heading-recipes {
-  padding-left: 21rem;
-  font-weight: 700;
-  color: black;
-
-}
 
 /*============= RECIPES SECTION =============*/
 
+/*------------- RECIPES GALLERY -------------*/
+
+.row-recipes {
+  display: flex;
+  flex-wrap: wrap;
+  padding:6.5rem 0.5rem;
+}
+
+/* Creates four equal columns that sits next to each other */
+.column-recipes {
+  position:relative;
+  flex: 50%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-recipes img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column-recipes img:hover {
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  transition: ease 1s;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-recipes {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-recipes {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.text-recipes {
+  position: relative;
+}
+
+/*------------- Related Recipes ----------*/
+
+#related-recipes img {
+    max-height: 20rem;
+}
+
+.heading-recipes {
+    padding-top: 7rem;
+    padding-left: 26rem;
+    font-weight: 700;
+    color: black;
+}
+
 /*====== HOVER ======*/
+
+.container-overlay {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered-overlay-recipes {
+  position: absolute;
+  height: 10rem;
+  /*padding-bottom: 30rem;*/
+  /*padding-left: 12rem;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-overlay {
+  position: absolute;
+  height: 10rem;
+  /*padding-bottom: 30rem;*/
+  /*padding-left: 12rem;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .hovereffect {
   width: 100%;
@@ -232,7 +181,11 @@ body {
   transform: translate3d(0,0,0);
 }
 
-/*=== END HOVER====*/
+.card img:hover{
+  filter: blur(1px);
+}
+
+/*=========== MODAL ==========*/
 
 img.modal-images {
  height: auto;
@@ -265,6 +218,8 @@ img.modal-images {
   color: white;
 }
 .jumbotron {
+  height: 100%;
+  width: 160rem;
   margin-bottom: 0;
   border-radius: 0;
   padding: 1rem 0 3rem;
@@ -294,6 +249,27 @@ h4.heading {
   background-color: #f2a949;
   margin: 0 auto 2rem;
 }
+
+.heading-underline-full-width {
+    width: 50rem;
+    height: .2rem;
+    background-color: #f2a949;
+    margin: 0 0 2rem;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px
+}
+
+.about-heading {
+    color: #f2a949;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 5rem;
+}
+
 .feature {
   text-align: center;
 }
@@ -326,11 +302,6 @@ h4.heading {
 }
 /*===== FIXED BACKGROUND IMG DARK =====*/
 
-.fixed-background {
-  background-image: url('../assets/img/fresh-truffles/WhatIsTruffle_01-1920x1080.jpg');
-  z-index: -1;
-  height: 60.6rem;
-}
 .dark {
   background-color: rgba(0, 0, 0, 0.75);
   padding: 7rem 2rem;
@@ -342,100 +313,8 @@ h4.heading {
   color: #E9ECEF;
 }
 
-/*============= SHOP ONLINE SECTION =============*/
 
-/*=== MODAL ===*/
-
-
-#products-row {
-  margin-top: -10rem;
-  padding-left: 10rem;
-}
-
-.row.padding {
-  padding: 2rem 0 5rem;
-}
-img.example-image {
-  /* margin-left: 10rem; */
-  max-width: 80%;
-  max-height: 80%;
-}
-
-img.recipes-image {
-  max-width: 20rem;
-  max-height: 20rem;
-}
-.row.no-padding [class*=col-] {
-  padding: 2rem;
-}
-.portfolio-item img:hover {
-  transform: scale(1.3);
-  cursor: zoom-in;
-}
-.portfolio-item img {
-  transition: transform .4s ease;
-}
-.portfolio-item {
-  overflow: hidden;
-}
-
-/*============= ABOUT US SECTION FIXED BG IMG LIGHT =============*/
-
-#about-us {
-  margin-top: 1rem;
-}
-
-#about-us-heading {
-  margin-top: 1rem;
-}
-
-.light {
-  background-color: rgba( 255, 255, 255, .85);
-  padding: 3rem 2rem 2rem;
-  z-index: 1000!important;
-}
-.card {
-  border-radius: 0;
-  border: .1rem solid rgba(0, 0, 0, .075);
-  box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
-  margin: 0 1rem;
-  transition: transform .4s ease;
-}
-.card-img-top {
-  border-radius: 0;
-}
-.card:hover {
-  transform: scale(.95);
-}
-.card h4 {
-  font-weight: 700;
-}
-.card h5 {
-  color: #1ebba3;
-}
-.card p {
-  border-top: .1rem solid rgba(0, 0, 0, .1);
-  border-bottom: .1rem solid rgba(0, 0, 0, .1);
-  padding: 1rem;
-  margin: 1rem 0 1.5rem;
-}
-.card svg.svg-inline--fa {
-  color: #f2a949!important;
-  font-size: 1.3rem;
-  width: 2rem;
-}
-.card svg.svg-inline--fa:hover {
-  color: #6c757d!important;
-}
-.owl-dot.active span,
-.owl-dot:hover span {
-  background: #1ebba3!important;
-}
-
-
-/*============= CONTACT SECTION =============*/
-
-
+/*============= CONTACT AND FOOTER SECTION =============*/
 
 #contacts-row {
   height: 60.55rem;
@@ -448,6 +327,7 @@ footer {
   background-color: #40474e;
   background-size: cover;
   color: white;
+
 }
 footer .row {
   background-color: rgba(57, 63, 70, 0.85);
@@ -455,7 +335,7 @@ footer .row {
 }
 footer img {
   height: 5rem;
-  margin: 1.5rem 0;
+  /*margin: 1.5rem 0;*/
 }
 footer a {
   color: white;
@@ -471,7 +351,12 @@ footer h3 {
   text-transform: uppercase;
   margin: 1.5rem 0;
 }
-/*--- Contact Form --*/
+
+#second-footer {
+
+}
+
+/*============ CONTACT FORM ==========*/
 .form-group {
   margin-bottom: 1.3rem;
 }
@@ -499,13 +384,12 @@ hr.socket {
 }
 
 /*============= CART PAGE ==============*/
-
-#alert-message {
-  margin-left: 25rem;
+body {
+    height: 100%;
 }
 
-.shopping-cart {
-  padding-left: 5rem;
+.shopping-cart [class*="col-"] {
+  padding-left: 0rem;
 }
 
 .shopping-cart img {
@@ -515,96 +399,136 @@ hr.socket {
   margin-top: -2rem;
 }
 
+.product-name {
+  text-decoration: none;
+  color: #53595f;
+}
+
+.product-name:hover {
+  text-decoration: none;
+  color: #f2a949;
+}
 
 .quantity {
-  float: left;
-  margin-right: 15px;
+  /*float: left;*/
+  /*margin-right: 15px;*/
   background-color: #eee;
   position: relative;
-  width: 80px;
+  width: 50px;
   overflow: hidden
 }
 
-.quantity input {
-  margin: 0;
-  text-align: center;
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  float: right;
-  color: #000;
-  font-size: 20px;
-  border: 0;
-  outline: 0;
-  background-color: #F6F6F6
+#trash-btn:hover {
+  color: #f2a949;
 }
 
-.quantity input.qty {
-  position: relative;
-  border: 0;
-  width: 100%;
-  height: 40px;
-  padding: 10px 25px 10px 10px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 15px;
-  border-radius: 0;
-  background-clip: padding-box
-}
-
-.quantity .minus, .quantity .plus {
-  line-height: 0;
-  background-clip: padding-box;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-background-size: 6px 30px;
-  -moz-background-size: 6px 30px;
-  color: #bbb;
-  font-size: 20px;
-  position: absolute;
-  height: 50%;
-  border: 0;
-  right: 0;
-  padding: 0;
-  width: 25px;
-  z-index: 3
-}
-
-.quantity .minus:hover, .quantity .plus:hover {
-  background-color: #dad8da
-}
-
-.quantity .minus {
-  bottom: 0
+#continue-shopping-btn:hover {
+  background-color: #ddd;
+  color: #f2a949;
 }
 
 #shopping-cart-checkout{
-  margin-top: -4.6rem;
+  margin-left: 3rem;
+}
+
+#shopping-cart-checkout:hover{
+  background-color: white;
+  color: #f2a949;
+}
+
+#shopping-cart-add:hover{
+  background-color: white;
+  color: #f2a949;
 }
 
 #total-price {
-  margin-top: -1rem;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  padding-left: 10rem;
+  width: 25rem;
+  text-align: left;
 }
 
 .card-footer {
   margin-top: 3rem;
 }
 
-/*============= CHECKOUT PAGE =============*/
+#checkout-button-section {
+    padding-left: 60rem;
+    margin-left: 30rem;
+}
 
 
+/*============= SCROLL DOWN =============*/
+
+#recipe-scroll-2 {
+    margin-top: 25rem;
+    margin-left: 25rem;
+}
 
 
+.chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+}
 
+.chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+}
 
+.chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+}
 
+.chevron:before,
+.chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #f2a949;
+}
 
+.chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+}
 
+.chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+}
 
+@keyframes move {
+    25% {
+        opacity: 1;
 
+    }
+    33% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    67% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+}
 
-
+@keyframes pulse {
+    to {
+        opacity: 1;
+    }
+}
 
 /*============= STRIPE =================*/
 
@@ -649,6 +573,7 @@ a.top-scroll {
 a.top-scroll:hover {
   opacity: .5;
 }
+
 
 /*============= MEDIA QUERIES =============*/
 
@@ -695,9 +620,6 @@ a.top-scroll:hover {
   }
   #fixed-2 {
     background-image: url('/public/assets/img/fresh-truffles/truffle.png');
-  }
-  footer {
-    background: url('/public/assets/img/fresh-truffles/truffle.png') no-repeat;
   }
   .clients img {
     max-width: 50%;

@@ -2,647 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879fae0e-3fc7-4606-8f23-b0b286c73074" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Trufelo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trufelo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.idea/Truffleshop.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Console/Commands/FlushSessions.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/FreshTruffleProducts.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/CartController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/CheckoutController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/HomeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Controllers/ProductsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap-4.3.1-dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/migrations/2019_05_12_174804_create_products_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/migrations/2019_05_16_102831_fresh_truffle_products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/migrations/2019_05_22_071833_create_sessions_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/migrations/2019_05_22_130008_create_sessions_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/database/seeds/ProductsTableSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/dist/jquery.slim.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/external/sizzle/dist/sizzle.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/parseXML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/var/location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/var/nonce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/var/rquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/ajax/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/attributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/attributes/attr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/attributes/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/attributes/prop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/attributes/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/attributes/val.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/callbacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/DOMEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/access.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/camelCase.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/isAttached.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/nodeName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/parseHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/ready-no-deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/ready.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/readyException.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/stripAndCollapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/toType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/addGetHookIf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/adjustCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/curCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/finalPropName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/showHide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/var/cssExpand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/var/getStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/var/rboxStyle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/css/var/swap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/data/Data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/data/var/acceptData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/data/var/dataPriv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/data/var/dataUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/deferred/exceptionHook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/deprecated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/effects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/effects/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/effects/animatedSelector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/event/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/event/alias.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/event/focusin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/event/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/event/trigger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/exports/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/exports/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/getAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/var/rtagName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/offset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/queue/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/selector-native.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/selector-sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/serialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/traversing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/traversing/findFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/traversing/var/dir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/traversing/var/siblings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/ObjectFunctionString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/arr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/class2type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/concat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/document.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/documentElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/fnToString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/getProto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/hasOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/indexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/isFunction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/isWindow.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/pnum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/push.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/rcheckableType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/rcssNum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/rnothtmlwhite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/var/toString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/jquery/src/wrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/np" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/Leo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/bella.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/emotionheader.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/la-finesse-daffi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/la-finesse-luna-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/lagotto-romagnolo-ap-sokmri-645.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/lagotto-romagnolo-dog-breed-pictures-header-460x260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/lagotto-romagnolo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/aboutus/paffi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/150trufflepearls.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/2958_1_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/Truffle_Whitefish_Roe_grande.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/black-truffle-caviar-from-caviar-heritage-1-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/c73f471165ada068adadd9a16dbfc505.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/la-finesse-mantequilla-trufada.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/la-finesse-truffle-pearls.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/mantequilla-artesanal-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/mantequilla-con-sabor-a-trufa-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/mantequilla-con-sabor-a-trufa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/perlas-de-trufa-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/perlas-de-trufa-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/resized-caviar.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/caviar/truffle-spheres-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/clients/client1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/clients/client2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/clients/client3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/computers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fixed/apple-mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fixed/apple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fixed/office-mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fixed/office.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/footer/footer-mobile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/footer/footer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/3480_2_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/644fdf173fc945c9bdde1aae8bd597fd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/Scarlett-HK-truffle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/WhatIsTruffle_01-1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/black_winter_2oz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/burgundy_truffles_4oz_base.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/fresh-truffle-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/la-finesse-truffles-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/portada-web-jpg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/resized-summer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/resized-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/scorzone_singolo_1_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/slider1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/summer_4oz_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/tartufi-bianchetti.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/trufa-fresca-de-temporada-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/truffle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/truffle1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/truffles.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/ttfl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/tuber-black-truffle-rolls-table-footage-087549325_prevstill.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/fresh-truffles/white_truffles_alba.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/lightbox/close.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/lightbox/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/lightbox/next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/lightbox/prev.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/Truffle-oil-logo (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/Truffle-oil-logo (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/Truffle-oil-logo (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/Truffle-oil-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/pdp-farm-icon-mushroom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/logo/truffle_oil_logo__2__cvQ_icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/nuno.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/nuno.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/oil/blur-close-up-cook-33783.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/oil/resized-oil.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/oil/terroirs-d-antan-winter-black-french-truffle-oil-1S-2951.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/oil/white-truffle-oil.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/packages/oil-package.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/portfolio/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/29312_black_truffle_pasta.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/31b66da2ed9ee73142387e02cca422ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Black-Truffle-Pasta3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/EW20180829_Truffle_Hunter_Autumn-shoot-Low-res-29-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/EW20180829_Truffle_Hunter_Autumn-shoot_Amended-16-1-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/EW20180829_Truffle_Hunter_Autumn_Shoot-3-500x1000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/EW20181015_TruffleHunter_Thanksgiving-13-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/EW20181015_TruffleHunter_Thanksgiving-15-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/EW20181015_TruffleHunter_Thanksgiving-27-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Fresh-Truffle-Pasta-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Guild-Producer-Member-jpg-EDIT2-100x100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/IMG_6643_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Lifestyle-Balsamic-1-500x933.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Lifestyle-English-100ml-2-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Lifestyle-Minced-3-1-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Lifestyle-Mustard-3-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Lifestyle-Porcini-1-500x933.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Lifestyle-White-250ml-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Mushroom-Risotto-18_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Ribeye-with-Black-Garlic-Truffle-Sauce_400x600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Thanksgiving-Email-Header-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Truffle-Leek-and-Bacon-Potato-Skins-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Truffle-Pizza.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Truffle-Poached-Egg-Muffin_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/Truffled-Egg-Toast-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/bacon-1000x939.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/bruchetta_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/butter-with-truffle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/dsc0008_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/glazedham-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/how-to-make-the-best-homemade-truffle-oil-1140x720_1_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/pizza-9_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/ris-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/seasonal-truffle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/truffle-cheese-ravioli_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/truffle-mashed-potatoes_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/truffle-pasta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/veal-chop-special-with.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/recipes/wild-mushroom-truffle-mac-cheese-3_1024x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/salt/Black_Truffle_Salt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/salt/resized-salt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/salt/truffle-salt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/sauce/Black-Truffle-Sauce-45g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/sauce/resized-sauce.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/team/team1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/team/team2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/team/team3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/team/team4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/assets/img/text.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/bootstrap-4.3.1-dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/arrow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/fixed.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/icofont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/icofont.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/lightbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/css/waypoints.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/jquery.counterup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/jquery.waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/lightbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/main.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/validator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/js/waypoints.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/mix-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/403.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/503.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/basket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/bucket.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/svg/cart-alt.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/public/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/Leo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/bella.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/emotionheader.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/la-finesse-daffi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/la-finesse-luna-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/lagotto-romagnolo-ap-sokmri-645.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/lagotto-romagnolo-dog-breed-pictures-header-460x260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/lagotto-romagnolo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/aboutus/paffi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/150trufflepearls.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/Truffle_Whitefish_Roe_grande.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/black-truffle-caviar-from-caviar-heritage-1-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/c73f471165ada068adadd9a16dbfc505.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/la-finesse-mantequilla-trufada.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/la-finesse-truffle-pearls.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/mantequilla-artesanal-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/mantequilla-con-sabor-a-trufa-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/mantequilla-con-sabor-a-trufa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/perlas-de-trufa-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/perlas-de-trufa-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/caviar/truffle-spheres-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/3480_1_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/3480_2_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/Scarlett-HK-truffle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/WhatIsTruffle_01-1920x1080.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/black_winter_2oz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/burgundy_truffles_4oz_base.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/fresh-truffle-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/la-finesse-truffles-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/portada-web-jpg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/resized-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/slider1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/summer_4oz_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/tartufi-bianchetti.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/trufa-fresca-de-temporada-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/truffle1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/truffles.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/ttfl.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/tuber-black-truffle-rolls-table-footage-087549325_prevstill.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/fresh-truffles/white_truffles_alba.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/Truffle-oil-logo (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/Truffle-oil-logo (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/Truffle-oil-logo (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/Truffle-oil-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/android-chrome-192x192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/android-chrome-512x512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/pdp-farm-icon-mushroom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/site.webmanifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/logo/truffle_oil_logo__2__cvQ_icon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/oil/IMG_1444-e1534964237644.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/oil/blur-close-up-cook-33783.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/oil/terroirs-d-antan-winter-black-french-truffle-oil-1S-2951.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/29312_black_truffle_pasta.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/31b66da2ed9ee73142387e02cca422ec.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Black-Truffle-Pasta3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/EW20180829_Truffle_Hunter_Autumn-shoot-Low-res-29-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/EW20180829_Truffle_Hunter_Autumn-shoot_Amended-16-1-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/EW20180829_Truffle_Hunter_Autumn_Shoot-3-500x1000.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/EW20181015_TruffleHunter_Thanksgiving-13-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/EW20181015_TruffleHunter_Thanksgiving-15-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/EW20181015_TruffleHunter_Thanksgiving-27-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Fresh-Truffle-Pasta-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Guild-Producer-Member-jpg-EDIT2-100x100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Lifestyle-Balsamic-1-500x933.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Lifestyle-English-100ml-2-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Lifestyle-Minced-3-1-1000x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Lifestyle-Mustard-3-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Lifestyle-Porcini-1-500x933.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Lifestyle-White-250ml-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Ribeye-with-Black-Garlic-Truffle-Sauce_400x600.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Thanksgiving-Email-Header-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Truffle-Leek-and-Bacon-Potato-Skins-1-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Truffle-Pizza.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/Truffled-Egg-Toast-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/bacon-1000x939.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/butter-with-truffle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/glazedham-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/ris-500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/seasonal-truffle.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/truffle-pasta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/recipes/veal-chop-special-with.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/salt/Black_Truffle_Salt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/salt/truffle-salt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/asset/img/sauce/Black-Truffle-Sauce-45g.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/arrow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/fixed.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/lightbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/css/waypoints.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/jquery-3.3.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/jquery.counterup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/jquery.waypoints.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/lightbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/owl.carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/validator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/js/waypoints.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/arrow.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/fixed.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/lightbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/owl.carousel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/owl.theme.default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/sass/waypoints.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/auth/login.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/auth/passwords/email.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/auth/passwords/reset.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/auth/register.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/auth/verify.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/layouts/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/layouts/master.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/partials/header.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/shop/allfresh.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/shop/cart.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/shop/checkout.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/shop/fresh-summer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/shop/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/shop/store.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/3YyLfd4d73hiqF7Fe2poF6KiNU0a8UVIkvnRlxSD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/5QObYSW2IBTt6jiCZggqW8jxCpMtynKg4fZRxuYZ" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/6koAQzopcJSOXBxFOXdSnxL0EwdHDpbCmD5Ps94v" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/8eNDSnMDe8ot6DNIg1VzuBsaJYQVd1zxXJpx0oLI" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/9AGyp1fj8Rr59CzPFY78mKzjbC9jiVGcmq8BHqwg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/9c3za7MxDBhRG5TzRHGMhqY19uS74RO4G5Pq1l3L" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/B9XFP1LEBL49syjgrF6NEYmZG1glCMtmpAhdNkG8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/G0zBHLXLAy21tkdGB2hq6tyPUSBPlkZ2SEyfiSsT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/HAGQgeawgr2B4rxLWlXfYOmiLsZA3dl0qfBBBBEE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/HDnq51n6hZrDDnlSXq4zMRIB94aMDXAh4OM0GqRR" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/HGqjlq7xMUELnx9eBXBw4OsD5qsVsijQc1whN3VL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/JmdKq9GOo2jKutH1EnysBN8g62LQV91f1khe5vfr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/KtB72l3PfDjy0PFyXdBnUJV5zUkDtxnfx61CwJm2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/MBQMXFTfTSVhNHbLzlMBMhL7CRCz1QCl1M3Ykjbk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/MrEc1qmPL3pVlC3xykvCnRtW5rhS4ZXYe8dvzouK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/Npm51mNJGGlbXzQ3twLNdGVkHw0IwuaBwBfBfTDS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/NtOQPfnVenvDeQVa60ipbQC01VNzmaSAzDDLa3dK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/O2U4ijA6JiVaZGJTNsqJk3ap9oxsgmyP6fXWmvGD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/P3MZTo8F3vzIajO0JX6eLAAIGZIUejv4wMFpoiaL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/PIgueFbUwCxtxBpqIB0tOQ7z3mVqxzCnLLtOJ198" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/Rq2KL4txViC8eg683Gop2OjSADgxDPjsKyg19P9T" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/Sno73CN7EcEQiM9UJ5nILIa5l7VKpHWZG8OpCWXh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/VIl1a9OHohLMkzsXNLYhSsUd5aBMyQLRYu2fWSLR" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/VRo4US1vDMpeeWjjAXzRtFMxsFSnmiUoK7Zn1v7f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/Whq5enZsShNMyasjochCVHayNFwxwU6eRGUE1z0s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/ZML88wFIgQ3QrbNmPYmcOyYJunCYFSTheCeHubzM" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/a2NItYzdwK3AsZcrvSnaXzY4g5AskBwHOPReVN5Z" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/acNPdcsb9fT6POVb5z0XiIYeqRJObDpvjIzuB2Yd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/bf9QvW3QXw4bOJdHZ4BKcQQYDQzCpjYRTlxAQ8TS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/edOe4qlduLjLnjeUv3FCL32wkQ3B0R8TzCwdDVBt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/fLAhiPXfonZuRiB0GxYorVyvZDLSObhAAJMIsHqh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/gHDtcmf5lVwbAzJGFOgTCjIrwLYVaaqmDOigEi37" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/h48qxsKz5AyMyCmzHmeTBLX44gly8UIRZySwOFna" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/hIcMaWtRAufC2ZGdeMHs4QI0nCGEiMrSZa1mmQA3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/iMEj6XWH0hFMshC894KkcACErHVcGS4vRhsFyAqP" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/idlZhIwulAkjpzJZy0X4xoj0O0m8ssvv55AGMWxe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/kcB8grBYAVVvJuY4w7MVwNRZEjFv0IK0vc4jRhkC" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/kvXV4DNdyUL7Tl5CpgUumHepP9ySeCdTyK89yiaz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/kxIvToyEdpHSBQyVzPxKmyT35TbDEUjKxtsicXlK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/nAWorZQodzJML0ne1Cl1v9N7YiJGsFKA3acAUKJT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/nFfpxAYIpNUufA0tNp8XtpvpXBQiHfUnqwkz4Hpc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/p5uuJE7aMRarrwZ4dfhEHrjee6wXK0MEvxLoQPfb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/r7WD6RS8MNfGAMbwGRsV9kcdd3BPNzhpdXYiQqmo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/tCbYTTTn6rV7XQldCKv8vPyffBiRS1tzWq2CDS3k" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/uGRHwSFki6BoyifJtgDdyRpLnpl4YOy0BQLFfrQk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/vaVFdgaEXMLEb2alqFjT91YvvUG5uhvAPfBhgnT7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/wPvSz3dkGSN4yQ1uHfIDzBE65afxPaMxziJepxX6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/xtCuypSKYK2RxeMGeHNSkGNK3cnP9tZyesRRpdoX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/sessions/zAhSXL9NMUGNF4da1iQXO53UtR9tuN7LPia0l1Yu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/tests/Feature/UserTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Truffleshop/webpack.mix.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/fresh-truffles/truffle-oil-fake-no-truffles-priceonomics.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/recipes/Lifestyle-Porcini-1-500x933.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/recipes/Lifestyle-Porcini-1-500x933.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/recipes/Ribeye-with-Black-Garlic-Truffle-Sauce_400x600.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/recipes/Ribeye-with-Black-Garlic-Truffle-Sauce_400x600.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/recipes/bruchetta_1024x1024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/abstract/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shop/allfresh.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/allfresh.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shop/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shop/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/checkout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/complete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/complete.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/shop/fresh-summer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/fresh-summer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -656,159 +61,42 @@
       <executable />
     </execution>
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/shop/checkout.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="63" column="33" selection-start-line="59" selection-start-column="24" selection-end-line="63" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/shop/complete.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/shop/cart.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="96" column="93" selection-start-line="96" selection-start-column="93" selection-end-line="96" selection-end-column="93" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="78" column="84" selection-start-line="78" selection-start-column="84" selection-end-line="78" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>footer</find>
-      <find>carta</find>
-      <find>Cart::</find>
+      <find>drop</find>
+      <find>ADD T</find>
+      <find>shopping-cart-</find>
+      <find>shopping-cart-check</find>
+      <find>checkout</find>
+      <find>change</find>
+      <find>data-id</find>
+      <find>index</find>
+      <find>product</find>
       <find>cart</find>
-      <find>alert</find>
-      <find>price</find>
-      <find>no items</find>
-      <find>continue shop</find>
-      <find>continue shopping</find>
-      <find>store</find>
-      <find>scroll</find>
-      <find>update</find>
-      <find>coupo</find>
-      <find>scrollify</find>
-      <find>total</find>
-      <find>complete</find>
-      <find>promo</find>
-      <find>d-flex</find>
-      <find>item(</find>
+      <find>row-re</find>
+      <find>text</find>
+      <find>recipes</find>
+      <find>margin-bottom</find>
+      <find>footer</find>
+      <find>pull</find>
+      <find>pull-ri</find>
+      <find>hovereff</find>
+      <find>hovereffec</find>
+      <find>truffles</find>
+      <find>underline</find>
+      <find>gray-dark</find>
+      <find>grey-dark</find>
+      <find>border-ra</find>
+      <find>border-</find>
+      <find>font-s</find>
+      <find>defa</find>
+      <find>scripts</find>
+      <find>url</find>
+      <find>navbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/resources/views/shop.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/form.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/views/shop/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Products.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Product.php" />
-        <option value="$PROJECT_DIR$/app/Product.php" />
-        <option value="$PROJECT_DIR$/resources/views/shop/fresh-summer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shop/allfresh.blade.php" />
-        <option value="$PROJECT_DIR$/app/Products.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_23_115637_create_coupons_table.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CartController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_23_142515_products_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_23_142949_create_products_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_23_150608_create_coupons_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/seeds/CouponsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CouponsController.php" />
-        <option value="$PROJECT_DIR$/app/Coupon.php" />
-        <option value="$PROJECT_DIR$/resources/views/shop/thankyou.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/shop/complete.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shop/checkout.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/shop/cart.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -901,110 +189,23 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/tcg/voyager" />
+      <path value="$PROJECT_DIR$/vendor/seld/phar-utils" />
+      <path value="$PROJECT_DIR$/vendor/seld/jsonlint" />
+      <path value="$PROJECT_DIR$/vendor/arrilot/laravel-widgets" />
+      <path value="$PROJECT_DIR$/vendor/larapack/voyager-hooks" />
+      <path value="$PROJECT_DIR$/vendor/larapack/doctrine-support" />
+      <path value="$PROJECT_DIR$/vendor/larapack/hooks" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="526" />
-    <option name="y" value="158" />
-    <option name="width" value="1280" />
-    <option name="height" value="693" />
-  </component>
+  <component name="ProjectId" id="1OYrEjRuYiYQcQxfcXyKARkHDxb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Trufelo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Trufelo" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1012,17 +213,18 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xamp\htdocs\Trufelo\resources\img" />
+      <recent name="D:\xamp\htdocs\Trufelo\public\assets\img\aboutus" />
       <recent name="D:\xamp\htdocs\Trufelo\database\migrations" />
       <recent name="D:\xamp\htdocs\Trufelo\app" />
       <recent name="D:\xamp\htdocs\Trufelo" />
-      <recent name="D:\xamp\htdocs\Trufelo\public" />
-      <recent name="D:\xamp\htdocs\Trufelo\public\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xamp\htdocs\Trufelo\resources\sass\abstract" />
       <recent name="D:\xamp\htdocs\Trufelo\app" />
       <recent name="D:\xamp\htdocs\Trufelo\app\Http" />
     </key>
@@ -1061,313 +263,31 @@
       <workItem from="1558537335320" duration="32035000" />
       <workItem from="1558639116897" duration="158000" />
       <workItem from="1558639302404" duration="58000" />
-      <workItem from="1558640195903" duration="5308000" />
+      <workItem from="1558640195903" duration="12860000" />
+      <workItem from="1558771948695" duration="30991000" />
+      <workItem from="1558887937226" duration="140038000" />
+      <workItem from="1559552056056" duration="132321000" />
+      <workItem from="1561377118252" duration="7957000" />
+      <workItem from="1561805424817" duration="6359000" />
+      <workItem from="1561812541941" duration="3062000" />
+      <workItem from="1562567003550" duration="8142000" />
+      <workItem from="1564125423483" duration="655000" />
+      <workItem from="1564165272350" duration="256000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50212000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.32900432" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32900432" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/img2/fresh-truffles/EW20180223_TruffleHunter-6.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/js/bower.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/form.blade.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/store.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/arrow.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/bootstrap-4.3.1-dist/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CheckoutController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Truffleshop/vendor/cartalyst/stripe/src/Api/Products.php" />
-    <entry file="file://$PROJECT_DIR$/Truffleshop/vendor/cartalyst/stripe/src/Stripe.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Product.php" />
-    <entry file="file://$PROJECT_DIR$/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/fresh-summer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="126" column="64" lean-forward="true" selection-start-line="126" selection-start-column="64" selection-end-line="126" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-704">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="72" selection-start-line="8" selection-start-column="72" selection-end-line="8" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/allfresh.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_16_102831_fresh_truffle_products.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_22_071833_create_sessions_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_115637_create_coupons_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_142515_products_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_142949_create_products_table.php" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/CouponsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#22#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CartController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
-          <folding>
-            <element signature="e#40#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_05_23_150608_create_coupons_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CouponsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="98" column="75" selection-start-line="98" selection-start-column="75" selection-end-line="98" selection-end-column="75" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Coupon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/complete.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/checkout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="63" column="33" selection-start-line="59" selection-start-column="24" selection-end-line="63" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/cart.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/shop/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/img/fresh-truffles/EW20180223_TruffleHunter-6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="78" column="84" selection-start-line="78" selection-start-column="84" selection-end-line="78" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="96" column="93" selection-start-line="96" selection-start-column="93" selection-end-line="96" selection-end-column="93" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

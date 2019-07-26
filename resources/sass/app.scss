@@ -2,7 +2,53 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 // Variables
-@import 'variables';
+@import 'abstract/variables.scss';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+//Functions
+@import "abstract/functions.scss";
+
+//Mixins
+@import "abstract/mixins.scss";
+
+//Base
+@import "base/base.scss";
+
+//Animations
+@import "base/animations.scss";
+
+//Typography
+@import "base/typography.scss";
+
+//Utilities
+@import "base/utilities.scss";
+
+//Buttons
+@import "components/button.scss";
+
+//Composition
+@import "components/composition.scss";
+
+//Ribbons
+@import "components/ribbons.scss";
+
+//Feature-Box
+@import "components/feature-box.scss";
+
+//Cards
+@import "components/cards.scss";
+
+//Navigation
+@import "layouts/navigation.scss";
+
+//Layouts
+@import "layouts/header.scss";
+
+
+//Grid
+@import "layouts/grid.scss";
+
+//Home
+@import "pages/home.scss";

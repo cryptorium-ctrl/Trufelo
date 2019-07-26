@@ -1,0 +1,86 @@
+.btn {
+  &:link,
+  &:visited { /*Aftereffect When User Click*/
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block; /*Do always if you want some spacing*/;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 1rem;
+    transition: all .2s; /*Applies all animate properties that is written before*/
+
+    position: relative; /*Positioning for infinite zoom wich position is absolute and absolute positioning applies to the first element with relative position*/
+  }
+  &:hover {
+    transform: translateY(-.3rem);
+    box-shadow: 0 1rem 1rem/*shows the blur*/ rgba($color-black, .2 /*opacity*/);
+    background-color: #c7ad86;
+    color: $color-gray-dark;
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, .2) ;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-gray-dark;
+    font-family: Lato;
+  }
+
+  &--animated {
+    animation: moveInBottom 1.5s/*animation speed*/ ease-out/*animation position*/ 1s /*animation delay*/;
+    animation-fill-mode: backwards;
+  }
+
+  /*Infinite Zoom Effect On Zoom*/
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+  }
+
+  &--white::after {
+    background-color: $color-white;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all .2s; //Animation for move up
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, .15);
+    transform: translateY(-2px); //Moves the button Up
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    transform: translateY(0);
+  }
+}

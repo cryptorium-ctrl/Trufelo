@@ -26,7 +26,8 @@
   &--white {
     background-color: $color-white;
     color: $color-gray-dark;
-    font-family: Lato;
+    font-family: "Times New Roman";
+    font-size: $default-font-size;
   }
 
   &--animated {
@@ -51,6 +52,7 @@
 
   &--white::after {
     background-color: $color-white;
+
   }
 
   &:hover::after {

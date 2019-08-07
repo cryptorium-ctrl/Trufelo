@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../css/icofont.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 
-@include('partials.second-header')
+@include('partials.header')
 
 <body>
 

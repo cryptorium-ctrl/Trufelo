@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Products;
 use App\Recipes;
+use App\Weight;
 use function GuzzleHttp\Promise\all;
 use Illuminate\Http\Request;
 
@@ -56,8 +57,10 @@ class productsController extends Controller
     public function index_black_truffle_oil()
     {
         $products = Products::all();
+        $weights = Weight::all();
 
-        return view('shop.black-truffle-oil')->with('products', $products);
+        return view('shop.black-truffle-oil')->with('products', $products)->with('weights', $weights);
+
     }
 
     public function index_white_truffle_oil()

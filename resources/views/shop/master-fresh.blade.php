@@ -6,19 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>@yield('title')</title>
-    {{--    @yield('styles')--}}
+    {{--    @yield('style.blade.php')--}}
 
-    <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/icofont.min.css">
-{{--    <link rel="stylesheet" href="../css/style.css">--}}
-    <link rel="stylesheet" href="../css/animate.css">
-    {{--    <link rel="stylesheet" href="css/lightbox.css">--}}
-    <link rel="stylesheet" href="../css/owl.carousel.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.css">
-    <link rel="stylesheet" href="../css/arrow.css">
-    <link rel="stylesheet" href="../css/fixed.css">
-    <link rel="stylesheet" href="../css/waypoints.css">
-    <link rel="stylesheet" href="..css/styles.css">
+    @include('partials.header')
+    @include('styles.style')
+    @section('truffle-style')
+    @stop
 </head>
 
 @include('partials.second-header')

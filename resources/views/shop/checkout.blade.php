@@ -5,18 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
-    @yield('styles')
 
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-{{--    <link rel="stylesheet" href="css/style.css">--}}
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/arrow.css">
-    <link rel="stylesheet" href="css/fixed.css">
-    <link rel="stylesheet" href="css/waypoints.css">
-    <link rel="stylesheet" href="css/styles.css">
+    @include('partials.header')
+    @include('styles.style')
+    @section('truffle-style')
+    @stop
 
 
 </head>
@@ -25,7 +18,6 @@
 
 
 <div class="row justify-content-center align-items-center">
-<div class="loader"></div>
 <main id="main" role="main">
     <section id="checkout-banner">
         <div class="container py-5 text-center">
@@ -33,7 +25,7 @@
         </div>
     </section>
 
-    <section id="checkout-container">
+    <section>
         <div class="container">
             <div class="row py-5">
                 <div class="col-md-4 order-md-2">
@@ -248,114 +240,14 @@
     </section>
 </main>
 </div>
+
 @include('partials.second-footer') <!-- Footer -->
+@include('scripts.scripts')
+@section('truffle-scripts')
+    @stop
+@section('stripe')
+    @stop
 
-
-
-@yield('scripts')
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
-<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/jquery.counterup.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/main.min.js"></script>
-<script src="js/script.js"></script>
-
-
-
-{{--<script src="https://js.stripe.com/v3/"></script>--}}
-{{--<script>--}}
-{{--    (function(){--}}
-{{--        // Create a Stripe client.--}}
-{{--        var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');--}}
-
-{{--// Create an instance of Elements.--}}
-{{--        var elements = stripe.elements();--}}
-
-{{--// Custom styling can be passed to options when creating an Element.--}}
-{{--// (Note that this demo uses a wider set of styles than the guide below.)--}}
-{{--        var style = {--}}
-{{--            base: {--}}
-{{--                color: '#32325d',--}}
-{{--                fontFamily: '"Helvetica Neue", Helvetica, sans-serif',--}}
-{{--                fontSmoothing: 'antialiased',--}}
-{{--                fontSize: '16px',--}}
-{{--                '::placeholder': {--}}
-{{--                    color: '#aab7c4'--}}
-{{--                }--}}
-{{--            },--}}
-{{--            invalid: {--}}
-{{--                color: '#fa755a',--}}
-{{--                iconColor: '#fa755a'--}}
-{{--            }--}}
-{{--        };--}}
-
-{{--// Create an instance of the card Element.--}}
-{{--        var card = elements.create('card', {--}}
-{{--            style: style,--}}
-{{--            hidePostalCode: true--}}
-{{--        });--}}
-
-{{--// Add an instance of the card Element into the `card-element` <div>.--}}
-{{--        card.mount('#card-element');--}}
-
-{{--// Handle real-time validation errors from the card Element.--}}
-{{--        card.addEventListener('change', function(event) {--}}
-{{--            var displayError = document.getElementById('card-errors');--}}
-{{--            if (event.error) {--}}
-{{--                displayError.textContent = event.error.message;--}}
-{{--            } else {--}}
-{{--                displayError.textContent = '';--}}
-{{--            }--}}
-{{--        });--}}
-
-{{--// Handle form submission.--}}
-{{--        var form = document.getElementById('payment-form');--}}
-{{--        form.addEventListener('submit', function(event) {--}}
-{{--            event.preventDefault();--}}
-
-{{--            var options = {--}}
-{{--                name: document.getElementById('name_on_card').value,--}}
-{{--                address_line1: document.getElementById('address').value,--}}
-{{--                address_city: document.getElementById('city').value,--}}
-{{--                address_state: document.getElementById('province').value,--}}
-{{--                address_zip: document.getElementById('postalcode').value--}}
-{{--            }--}}
-
-{{--            stripe.createToken(card, options).then(function(result) {--}}
-{{--                if (result.error) {--}}
-{{--                    // Inform the user if there was an error.--}}
-{{--                    var errorElement = document.getElementById('card-errors');--}}
-{{--                    errorElement.textContent = result.error.message;--}}
-{{--                } else {--}}
-{{--                    // Send the token to your server.--}}
-{{--                    stripeTokenHandler(result.token);--}}
-{{--                }--}}
-{{--            });--}}
-{{--        });--}}
-
-{{--// Submit the form with the token ID.--}}
-{{--        function stripeTokenHandler(token) {--}}
-{{--            // Insert the token ID into the form so it gets submitted to the server--}}
-{{--            var form = document.getElementById('payment-form');--}}
-{{--            var hiddenInput = document.createElement('input');--}}
-{{--            hiddenInput.setAttribute('type', 'hidden');--}}
-{{--            hiddenInput.setAttribute('name', 'stripeToken');--}}
-{{--            hiddenInput.setAttribute('value', token.id);--}}
-{{--            form.appendChild(hiddenInput);--}}
-
-{{--            // Submit the form--}}
-{{--            form.submit();--}}
-{{--        }--}}
-{{--    })();--}}
-{{--</script>--}}
 </body>
 
 </html>

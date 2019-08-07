@@ -61,6 +61,9 @@ Route::get('/recipes/burger-with-truffles', 'RecipesController@index_Burger')->n
 
 Route::get('/recipes/master-recipes', 'RecipesController@index_Master');
 
+/*Weight*/
+
+Route::get('weights', 'WeightController@index')->name('weights.index');
 
 /*Cart*/
 
@@ -91,4 +94,10 @@ Route::delete('/coupon', 'CouponsController@destroy')->name('coupon.destroy');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+/*Scripts*/
+Route::get('scripts', function () {
+    return view('scripts.scripts');
+});
+
 

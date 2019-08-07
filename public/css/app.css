@@ -11015,7 +11015,8 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
-  font-family: Lato;
+  font-family: "Times New Roman";
+  font-size: 1.6rem;
 }
 
 .btn--animated {
@@ -11362,19 +11363,6 @@ body {
   cursor: pointer;
 }
 
-.navigation__background {
-  height: 6rem;
-  width: 6rem;
-  border-radius: 50%;
-  position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
-  z-index: 1000;
-  transition: -webkit-transform 0.8 cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.8 cubic-bezier(0.86, 0, 0.07, 1);
-  transition: transform 0.8 cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8 cubic-bezier(0.86, 0, 0.07, 1);
-}
-
 .navigation__nav {
   height: 100vh;
   position: fixed;
@@ -11383,7 +11371,7 @@ body {
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: all 0.8s;
+  transition: all 1s;
 }
 
 .navigation__list {

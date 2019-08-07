@@ -1,8 +1,8 @@
 <footer>
-    <div class="row" id="second-footer" style="height: 8rem; bottom: 0;">
+    <div class="row" id="second-footer" style="height: 8rem; bottom: 0rem;">
             <hr class="socket">
-            &copy; Trufelo. {{date('Y')}}  Made by
-            <a href="">{{menu('footer', 'partials.menus.second-footer')}}</a>
+            <span class="mt-3">&copy; Trufelo. {{date('Y')}}  Made by IL</span>
+            <a href="" class="ml-auto">{{menu('footer', 'partials.menus.second-footer')}}</a>
     </div>
 </footer>
 

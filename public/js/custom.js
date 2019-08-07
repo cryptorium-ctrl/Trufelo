@@ -1,10 +1,10 @@
 /*========== NAVBAR TRANSPARENT TO SOLID ==========*/
 
-$(document).ready(function() { //when document(DOM) loads completely. 
-        // Transition effect for navbar 
-        $(window).scroll(function() { //function is called while you scrolls 
+$(document).ready(function() { //when document(DOM) loads completely.
+        // Transition effect for navbar
+        $(window).scroll(function() { //function is called while you scrolls
           // checks if window is scrolled more than 300px, adds/removes solid class
-          if($(this).scrollTop() > 300) { 
+          if($(this).scrollTop() > 300) {
               $('.navbar').addClass('solid'); //add class 'solid' in any element which has class 'navbar'
           } else {
               $('.navbar').removeClass('solid'); //remove class 'solid' in any element which has class 'navbar'
@@ -44,7 +44,7 @@ $(document).ready(function(){ //document is loaded
       $('html, body').animate({ //animate whole html and body elements
         scrollTop: $(hash).offset().top //scroll to the element with that hash
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash; //website.com - website.com#home
         //Optional remove "window.location.hash = hash;" to prevent transparent navbar on load
@@ -53,10 +53,12 @@ $(document).ready(function(){ //document is loaded
   });
 });
 
+
+
 /*========== BOUNCING DOWN ARROW ==========*/
 //down arrow at top
 $(document).ready(function(){
-$(window).scroll(function(){ //browser scroll 
+$(window).scroll(function(){ //browser scroll
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //set opacity css from 1 to -(negative) infinity of element with class 'arrow'
   //250 is fade pixels
   });
@@ -82,7 +84,7 @@ $(document).ready(function(){ //when document is ready
             },
             // min-width: 768px
             768 : {
-                items: 3 //on devices with width 768px and above show 3 slides 
+                items: 3 //on devices with width 768px and above show 3 slides
             }
         }
   }
@@ -154,25 +156,25 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     // Select and loop the container element of the elements you want to equalise
-    $('.row').each(function(){  
-      
+    $('.row').each(function(){
+
       // Cache the highest
       var highestBox = 0;
-      
+
       // Select and loop the elements you want to equalise
       $('.pricing-column,.card-body', this).each(function(){
-        
+
         // If this box is higher than the cached highest then store it
         if($(this).height() > highestBox) {
-          highestBox = $(this).height(); 
+          highestBox = $(this).height();
         }
-      
-      });  
-            
-      // Set the height of all those children to whichever was highest 
+
+      });
+
+      // Set the height of all those children to whichever was highest
       $('.pricing-column,.card-body',this).height(highestBox);
-                    
-    }); 
+
+    });
 
 });
 

@@ -6363,7 +6363,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 		reliableMarginLeftVal = roundPixelMeasures( divStyle.marginLeft ) === 12;
 
 		// Support: Android 4.0 - 4.3 only, Safari <=9.1 - 10.1, iOS <=7.0 - 9.3
-		// Some styles come back with percentage values, even though they shouldn't
+		// Some style.blade.php come back with percentage values, even though they shouldn't
 		div.style.right = "60%";
 		pixelBoxStylesVal = roundPixelMeasures( divStyle.right ) === 36;
 
@@ -6744,7 +6744,7 @@ jQuery.extend( {
 	// Get and set the style property on a DOM Node
 	style: function( elem, name, value, extra ) {
 
-		// Don't set styles on text and comment nodes
+		// Don't set style.blade.php on text and comment nodes
 		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
 			return;
 		}
@@ -6886,7 +6886,7 @@ jQuery.each( [ "height", "width" ], function( i, dimension ) {
 			var matches,
 				styles = getStyles( elem ),
 
-				// Only read styles.position if the test has a chance to fail
+				// Only read style.blade.php.position if the test has a chance to fail
 				// to avoid forcing a reflow.
 				scrollboxSizeBuggy = !support.scrollboxSize() &&
 					styles.position === "absolute",
@@ -7237,7 +7237,7 @@ function defaultPrefilter( elem, props, opts ) {
 		return;
 	}
 
-	// Restrict "overflow" and "display" styles during box animations
+	// Restrict "overflow" and "display" style.blade.php during box animations
 	if ( isBox && elem.nodeType === 1 ) {
 
 		// Support: IE <=9 - 11, Edge 12 - 15
@@ -27953,7 +27953,7 @@ $(function () {
         data: $(this).serialize(),
         success: function success(data) {
           // data = JSON object that contact.php returns
-          // we recieve the type of the message: success x danger and apply it to the 
+          // we recieve the type of the message: success x danger and apply it to the
           var messageAlert = 'alert-' + data.type;
           var messageText = data.message; // let's compose Bootstrap alert box HTML
 
@@ -27983,10 +27983,10 @@ $(function () {
 
 /*========== NAVBAR TRANSPARENT TO SOLID ==========*/
 $(document).ready(function () {
-  //when document(DOM) loads completely. 
-  // Transition effect for navbar 
+  //when document(DOM) loads completely.
+  // Transition effect for navbar
   $(window).scroll(function () {
-    //function is called while you scrolls 
+    //function is called while you scrolls
     // checks if window is scrolled more than 300px, adds/removes solid class
     if ($(this).scrollTop() > 300) {
       $('.navbar').addClass('solid'); //add class 'solid' in any element which has class 'navbar'
@@ -28047,7 +28047,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    //browser scroll 
+    //browser scroll
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); //set opacity css from 1 to -(negative) infinity of element with class 'arrow'
     //250 is fade pixels
   });
@@ -28083,7 +28083,7 @@ $(document).ready(function () {
       },
       // min-width: 768px
       768: {
-        items: 3 //on devices with width 768px and above show 3 slides 
+        items: 3 //on devices with width 768px and above show 3 slides
 
       }
     }
@@ -28166,25 +28166,25 @@ $(document).ready(function(){
 $(document).ready(function(){
 
     // Select and loop the container element of the elements you want to equalise
-    $('.row').each(function(){  
-      
+    $('.row').each(function(){
+
       // Cache the highest
       var highestBox = 0;
-      
+
       // Select and loop the elements you want to equalise
       $('.pricing-column,.card-body', this).each(function(){
-        
+
         // If this box is higher than the cached highest then store it
         if($(this).height() > highestBox) {
-          highestBox = $(this).height(); 
+          highestBox = $(this).height();
         }
-      
-      });  
-            
-      // Set the height of all those children to whichever was highest 
+
+      });
+
+      // Set the height of all those children to whichever was highest
       $('.pricing-column,.card-body',this).height(highestBox);
-                    
-    }); 
+
+    });
 
 });
 
@@ -37031,7 +37031,7 @@ $(function () {
     items.each(function () {
       //for every element in items run function
       var osElement = $(this),
-          //set osElement to the current 
+          //set osElement to the current
       osAnimationClass = osElement.attr('data-animation'),
           //get value of attribute data-animation type
       osAnimationDelay = osElement.attr('data-delay'); //get value of attribute data-delay time

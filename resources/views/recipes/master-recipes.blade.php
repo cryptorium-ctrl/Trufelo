@@ -13,7 +13,7 @@
 
 </head>
 
-@include('partials.second-header')
+@include('partials.header')
 
 <body>
 
@@ -21,10 +21,11 @@
 <div class="container">
 {{--        {{dd($recipe->imagePath)}}--}}
     <div class="row">
-        <div class="col-md-12" style="margin-top:5.6rem;">
+        <div class="col-md-12" style="margin-top:7.6rem;">
 
             <img class="thumbnail img-fluid" src="{{asset('storage/' .$recipe->imagePath)}}" alt="image" style="max-height:45rem;">
-            <h3>{{$recipe->name}}</h3>
+            <h3 style="text-transform: uppercase; text-align: center; text-shadow: .5px .5px #000;">{{$recipe->name}}</h3>
+            <h5 class="heading-underline"></h5>
             <p>{!!$recipe->description!!}</p>
 
             <div id="printableArea">
@@ -32,7 +33,7 @@
                     <div class="col-md-6 d-flex justify-content-start">
                         <i class="far fa-clock fa-lg" style="color:#f2a949;"></i>
                         <p style="margin-left:.1rem;">Preparation: {{$recipe->preparationTime}} minutes</p>
-                        <i class="far fa-clock fa-lg" style="margin-left:.5rem; color:#f2a949" ;></i>
+                        <i class="far fa-clock fa-lg" style="margin-left:.5rem; color:#f2a949";></i>
                         <p style="margin-left:.1rem;">Cooking: {{$recipe->cookingTime}} minutes</p>
                     </div>
                     <div class="col-md-6 d-flex justify-content-end">
@@ -44,11 +45,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 w-auto">
-                            <h3>Ingredients:</h3>
+                            <h4>INGREDIENTS:</h4>
                             {!!$recipe->ingredients!!}
                         </div>
                         <div class="col-md-6">
-                            <h3>Method:</h3>
+                            <h4>METHOD:</h4>
                             <p>{!!$recipe->method!!}</p>
                         </div>
                     </div>
@@ -71,14 +72,14 @@
 {{--<script src="simpleParallax.js"></script>--}}
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@4.2.1/dist/simpleParallax.min.js"></script>
 <script>
-    var image = document.getElementsByClassName('thumbnail');
+    let image = document.getElementsByClassName('thumbnail');
     new simpleParallax(image, {
         scale: 1.5
     });
 </script>
 <script>function printDiv(divName) { //Print Button Function
-        var printContents = document.getElementById(divName).innerHTML;
-        var originalContents = document.body.innerHTML;
+        let printContents = document.getElementById(divName).innerHTML;
+        let originalContents = document.body.innerHTML;
 
         document.body.innerHTML = printContents;
 

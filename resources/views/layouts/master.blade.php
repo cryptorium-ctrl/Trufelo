@@ -5,375 +5,213 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
-    @yield('styles')
 
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/arrow.css">
-    <link rel="stylesheet" href="css/fixed.css">
-    <link rel="stylesheet" href="css/waypoints.css">
-{{--    <link rel="stylesheet" href="css/styles.css">--}}
+    @include('styles.style')
+    @section('fresh-truffle-style')
+    @stop
 
-
+    <link rel="stylesheet" href="{{URL::to('css/app.css')}}">
 </head>
-
-<body data-spy="scroll" data-target="#navbarResponsive">
-@include('partials.header')
 
 @yield('content')
 
-<!--- Start Landing Page Image -->
-<div class="scrollify">
-<div class="landing">
-    <div class="home-wrap">
-        <div class="home-inner">
+<body>
+<div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+    <label for="navi-toggle" class="navigation__button">
+        <div class="header__logo-box">
+            <img
+                class="header__logo header__logo--glowEffect"
+                src="../public/assets/img/logo/logo.png"
+                alt="header__logo"
+            />
         </div>
+    </label>
+
+    <nav class="navigation__nav">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">HOME</a>
+            </li>
+            <li class="navigation__item navigation__item-dropdown">
+                <div class="dropdown">
+                    <button class="dropbtn">PRODUCTS</button>
+                    <div class="dropdown-content">
+                        <a href="{{route('shop.allfresh')}}">Fresh Truffles</a>
+                        <a href="{{route('shop.truffled-products')}}">Truffled Products</a>
+                        <a href="#">Truffle Packages</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">RECIPES</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">ABOUT US</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">ABOUT TRUFFLES</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<header class="header">
+
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--main">TRUFELO</span>
+            <span class="heading-primary--sub">ONLY THE FINEST TRUFFLES</span>
+        </h1>
+        <a href="#" class="btn btn--white btn--animated">DISCOVER US</a>
     </div>
-</div>
-<!--- End Landing Page Image -->
+</header>
 
-<!--- Start Landing Page Caption -->
-<div class="caption text-center">
-
-
-    <div class="os-animation" data-animation="bounceInUp" data-delay="1s">
-        <a class="btn btn-outline-light btn-lg" href="#features" id="shop-now-button">SHOP NOW</a>
-    </div>
-
-</div>
-<!--- End Landing Page Caption -->
-
-<!--- Bouncing Down Arrow -->
-<a class="down-arrow" href="#features">
-    <div class="arrow bounce d-none d-md-block">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-    </div>
-</a>
-</div>
-</div>
-
-<!--- End Home Section -->
-
-
-<!--- End Fixed Background IMG Dark -->
-
-</div>
-</div>
-<!--- End of Features Section -->
-
-<!--- Start Shop Online Section -->
-
-<div id="shop-online" class="offset">
-    <div class="scrollify">
-        <div class="col-12 os-animation" data-animation="fadeInUp">
-            <h3 class="heading" style="padding-top: 7rem;">SHOP ONLINE</h3>
-            <div class="heading-underline"></div>
-        </div>
-        <!--- End Row -->
-
-        <!--- Start Shop Online Grid -->
-
+<main>
+    <section class="index__products">
         <div class="row">
-
-            <div class="col-md-4">
-                <div class="hovereffect">
-                    <img class="img-fluid" src="../public/assets/img/fresh-truffles/3480_2_.jpg" alt=""
-                         style="height: 40rem; width: 40rem;">
-                    <div class="overlay">
-                        <h2>fresh truffles</h2>
-                        <a class="btn btn-outline-light btn-sm" href="{{route('shop.allfresh')}}" id="shop-online-button">buy now</a>
+            <div class="col-1-of-3">
+                <!--First Card-->
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--1">
+                            &nbsp
+                        </div>
+                        <h4 class="card__heading">
+                  <span class="card__heading-span--1">
+                    Fresh &nbsp &nbsp &nbsp Truffles</span
+                  >
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>Winter Truffles</li>
+                                <li>Summer Truffles</li>
+                                <li>White Truffles</li>
+                                <li class="card__details-animation">
+                      <span class="card__details-arrow"
+                      ><img
+                              class="card__details-arrow-pic"
+                              src="../public/assets/img/logo/curve-arrow.png"
+                              alt=""
+                          /></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-1">
+                        <div
+                            class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
+                        >
+                            Best Quality
+                        </div>
+                        <div class="card__side--back--button-box">
+                            <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="col-md-4">
-                <div class="hovereffect">
-                    <img class="img-fluid" src="../public/assets/img/oil/truffle-oil.jpg" alt=""
-                         style="height: 40rem; width: 40rem;">
-                    <div class="overlay">
-                        <h2>TRUFFLED PRODUCTS</h2>
-                        <a class="btn btn-outline-light btn-sm" href="#" id="shop-online-button">buy now</a>
+            <div class="col-1-of-3">
+                <!--Second Card-->
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--2">
+                            &nbsp
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span--2">Truffled Products</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>
+                                    Truffle Oil & Vinegar
+                                </li>
+                                <li>
+                                    Truffle Cavair
+                                </li>
+                                <li>
+                                    Truffle Condiments
+                                </li>
+                                <li class="card__details-animation">
+                      <span class="card__details-arrow"
+                      ><img
+                              class="card__details-arrow-pic"
+                              src="../public/assets/img/logo/curve-arrow.png"
+                              alt=""
+                          /></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card__side card__side--back card__side--back-2">
+                        <div
+                            class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
+                        >
+                            Best Price
+                        </div>
+                        <div class="card__side--back--button-box">
+                            <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="hovereffect">
-                    <img class="img-fluid" src="../public/assets/img/packages/oil-package.jpg" alt=""
-                         style="height: 40rem; width: 40rem;">
-                    <div class="overlay">
-                        <h2>truffle packages</h2>
-                        <a class="btn btn-outline-light btn-sm" href="#" id="shop-online-button">buy now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div> <!-- End Row of Categories -->
-
-<!--- End Container -->
-
-
-<!--- Start Truffle Recipes Section -->
-
-<div id="recipes" class="offset">
-    <div class="scrollify">
-        <!--- Start Jumbotron -->
-        <div class="jumbotron">
-            <div class="narrow">
-
-                <div class="os-animation" data-animation="fadeInUp">
-                    <h3 class="heading">Truffle Recipes</h3>
-                    <div class="heading-underline"></div>
-                </div>
-
-                <!--- Start Recipes Columns -->
-                <div class="row justify-content-md-center">
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="os-animation" data-animation="fadeInLeft">
-                            <div class="pricing-column text-center">
-                                <img class="recipes-image"
-                                     src="assets/img/recipes/Lifestyle-White-250ml-1-500x500.jpg" alt="">
-                                <h3>Truffle Oil Recipes</h3>
-                                <p>
-                                </p>
-                                <div class="pricing-features">
-                                    <h4><span class="item">Domain Names</span>: 1</h4>
-
-                                </div>
-
-                                <a class="btn btn-secondary btn-sm" href="#contact">Buy Now</a>
-                            </div>
+            <div class="col-1-of-3">
+                <!--Third Card-->
+                <div class="card">
+                    <div class="card__side card__side--front">
+                        <div class="card__picture card__picture--3">
+                            &nbsp
+                        </div>
+                        <h4 class="card__heading">
+                            <span class="card__heading-span--3">Truffle Packages</span>
+                        </h4>
+                        <div class="card__details">
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li class="card__details-animation">
+                      <span class="card__details-arrow"
+                      ><img
+                              class="card__details-arrow-pic"
+                              src="../public/assets/img/logo/curve-arrow.png"
+                              alt=""
+                          /></span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="os-animation" data-animation="fadeInUp">
-                            <div class="pricing-column text-center">
-
-                                <img class="recipes-image" src="assets/img/recipes/Black-Truffle-Pasta3.jpg"
-                                     alt="">
-                                <h3>Fresh Truffle Recipes</h3>
-                                <p>The Pro Plan, the best overall value you can get.</p>
-                                <div class="pricing-features">
-                                    <h4><span class="item">Domain Names</span>: 5</h4>
-
-                                </div>
-
-                                <a class="btn btn-turquoise btn-sm" href="#contact">Buy Now</a>
-                            </div>
+                    <div class="card__side card__side--back card__side--back-3">
+                        <div
+                            class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
+                        >
+                            Best Quality
+                        </div>
+                        <div class="card__side--back--button-box">
+                            <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="os-animation" data-animation="fadeInRight">
-                            <div class="pricing-column text-center">
-                                <img class="recipes-image" src="assets/img/recipes/glazedham-500x500.jpg"
-                                     alt="">
-                                <h3>Truffle Pasta Recipes</h3>
-                                <p>Go Premium if you need a little extra space.</p>
-                                <div class="pricing-features">
-                                    <h4><span class="item">Domain Names</span>: 10</h4>
-                                </div>
-
-                                <a class="btn btn-secondary btn-sm" href="#contact">Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
-            </div> <!--- End Pricing Columns -->
-        </div>
-
-    </div> <!--- End Narrow -->
-
-</div> <!--- End Jumbotron -->
-
-<!--- End of Pricing Section -->
-
-<!-- Start of About Truffles Section -->
-
-<div id="about-truffles" class="offset">
-    <div class="scrollify">
-        <div class="fixed-background" id="about-fixed">
-            <div class="row dark">
-
             </div>
         </div>
-    </div>
-</div>
-
-
-<!--- Start About Us Section -->
-
-<div id="about-us" class="offset">
-    <div class="scrollify">
-        <div class="col-12 os-animation" data-animation="fadeInUp">
-            <h3 class="heading" id="about-us-heading">About Us</h3>
-            <div class="heading-underline"></div>
-        </div>
-
-        <div class="col-md-12">
-            <div class="os-animation" data-animation="fadeInUp">
-                <div id="team-slider" class="owl-carousel owl-theme">
-
-                    <div class="card text-center">
-                        <img class="card-img-top" src="assets/img/aboutus/bella.jpg" alt="">
-                        <div class="card-body">
-                            <h4>Bella</h4>
-                            <h5>CEO</h5>
-                            <p>John is an entrepreneur with almost 20 years of experience.</p>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img class="card-img-top" src="assets/img/aboutus/Leo.jpg" alt="">
-                        <div class="card-body">
-                            <h4>Leo</h4>
-                            <h5>President</h5>
-                            <p>John has over 10 years of experience in a technology role.</p>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img class="card-img-top" src="assets/img/aboutus/Paffi.jpg" alt="">
-                        <div class="card-body">
-                            <h4>Paffi</h4>
-                            <h5>Vice President</h5>
-                            <p>Charles went to business school and worked his way up the ladder.</p>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="card text-center">
-                        <img class="card-img-top" src="assets/img/aboutus/" alt="">
-                        <div class="card-body">
-                            <h4>Cindy Wilson</h4>
-                            <h5>CFO</h5>
-                            <p>Cindy has an established financial operations background.</p>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <!--- End Team Slider -->
+        <a class="down-arrow" href="#features">
+            <div class="arrow bounce d-none d-md-block">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
             </div>
-            <!--- End Animation -->
-        </div>
-        <!--- End col-md-12 -->
-    </div>
-</div>
-</div>
-</div>
-</div>
+        </a>
+    </section>
+</main>
 
 
-<!--- Start Contact Section -->
-<div id="contact" class="offset">
-    <div class="scrollify">
-        <footer>
-            <div class="row" id="contacts-row">
-                <div class="col-md-5">
-                    <img src="assets/img/logo/Truffle-oil-logo (3).png" alt="">
-                    <p>At our core is a collection of design and development solutions that represent everything
-                        your business needs to compete in the modern marketplace.</p>
-                    <strong>Our Location</strong>
-                    <p>100 Street Name<br>Our City, AA 10000</p>
-                    <strong>Contact Info</strong>
-                    <p>(888) 888-8888<br>email@nuno.com</p>
-                </div>
 
-                <div class="col-md-7">
-                    <h3>Contact Us</h3>
-
-                    <form id="contact-form" method="post" action="contact.php">
-
-                        <div class="messages"></div>
-                        <div class="controls">
-
-                            <div class="form-group">
-                                <input id="form_name" type="text" name="name" class="form-control"
-                                       placeholder="Enter your name." required="required">
-                            </div>
-
-                            <div class="form-group">
-                                <input id="form_email" type="email" name="email" class="form-control"
-                                       placeholder="Enter your email." required="required">
-                            </div>
-
-                            <div class="form-group">
-								<textarea id="form_message" name="message" class="form-control"
-                                          placeholder="Add your message." rows="4" required="required"></textarea>
-                            </div>
-
-                            <input type="submit" class="btn btn-outline-light btn-sm" value="Send message">
-
-                        </div>
-
-                    </form>
-
-                </div>
-                <hr class="socket">
-                &copy; Trufelo.
-            </div>
-        </footer>
-    </div>
-</div>
-
-</div>
-<!--- End of Row -->
-
-
-</div>
-
-<!--- End Contact Section -->
-
-<!--- Top Scroll -->
-<a href="#home" class="top-scroll">
-    <i class="fas fa-angle-up"></i>
-</a>
-<!--- End of Top Scroll -->
-
-<!--- Script Source Files -->
-
-
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="{{ URL::asset('../node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
-<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/waypoints.js"></script>
-<script src="js/lightbox.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/jquery.counterup.js"></script>
-<script src="js/validator.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/main.min.js"></script>
-<script src="js/script.js"></script>
+@include('partials.second-footer')
+@include('scripts.scripts')
+@section('truffle-scripts')
+@stop
+<script src="{{asset('node_modules/jquery-scrollify/jquery.scrollify.js')}}"></script>
 <script>
     $(function () {
         $.scrollify({
@@ -381,17 +219,6 @@
         });
     });
 </script>
-<script>
-    lightbox.option({
-        'albumLabel': "",
-        'positionFromTop': 150,
-        'wrapAround': true
-    })
-</script>
-
-
-<!--- End of Script Source Files -->
-{{--@yield('scripts')--}}
 </body>
 
 </html>

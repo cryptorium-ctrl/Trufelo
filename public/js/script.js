@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 function validateCheckoutform() {
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  // Fetch all the forms we want to apply custom Bootstrap validation style.blade.php to
   var forms = document.getElementsByClassName("needs-validation");
 
   // Loop over them and prevent submission

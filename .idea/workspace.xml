@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879fae0e-3fc7-4606-8f23-b0b286c73074" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/images/truffle.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/images/truffleoil-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Trufelo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Trufelo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RecipesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecipesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_23_150608_create_coupons_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_23_150608_create_coupons_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_28_150556_add_image_to_products_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_29_072942_recipes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_29_072942_recipes_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_03_065453_create_order_product_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/later/2019_06_03_065453_create_order_product_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CouponsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CouponsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/oil/36833_XXX_v1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/oil/Bencic-Tartufi-Vinaigrette-sa-okusom-tartufa-1080px.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/oil/large_square_White_Truffle_Oil__La_Truffiere_Condimento_Aromatizzato_al_Tartufo_Bianco.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/oil/white-truffle-oil.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/oil/white-truffle-oil.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/recipes/Sauteed-Mushrooms-with-Eggs-and-Truffle-Oil-21-739x1024.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/abstract/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/abstract/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/base/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/base/_typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/_button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/_cards.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/_feature-box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/_featured-products.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/layouts/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/layouts/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/contact-us.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/second-footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/second-footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/recipes/allrecipes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recipes/allrecipes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/recipes/master-recipes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recipes/master-recipes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/recipes/truffle-gravy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/recipes/truffle-gravy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/scripts/scripts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/scripts/scripts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/allfresh.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/allfresh.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/black-truffle-oil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/black-truffle-oil.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/fresh-summer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/fresh-summer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/fresh-white.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/fresh-white.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/fresh-winter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/fresh-winter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/truffle-vinegar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/truffle-vinegar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/truffled-products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/truffled-products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/white-truffle-oil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/white-truffle-oil.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +155,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -280,7 +225,7 @@
       <workItem from="1565852128936" duration="11343000" />
       <workItem from="1566455628504" duration="42587000" />
       <workItem from="1566819885774" duration="1059000" />
-      <workItem from="1566822359572" duration="22791000" />
+      <workItem from="1566822359572" duration="23683000" />
     </task>
     <servers />
   </component>

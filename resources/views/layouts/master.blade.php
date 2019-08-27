@@ -40,12 +40,12 @@
                     <div class="dropdown-content">
                         <a href="{{route('shop.allfresh')}}">Fresh Truffles</a>
                         <a href="{{route('shop.truffled-products')}}">Truffled Products</a>
-                        <a href="#">Truffle Packages</a>
+                        <a href="{{route('shop.truffle-packages')}}">Truffle Packages</a>
                     </div>
                 </div>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">RECIPES</a>
+                <a href="{{route('recipes.allrecipes')}}" class="navigation__link">RECIPES</a>
             </li>
             <li class="navigation__item">
                 <a href="#" class="navigation__link">ABOUT US</a>
@@ -72,9 +72,28 @@
 </header>
 
 <main>
-    <section class="index__products">
-        <div class="row">
-            <div class="col-1-of-3">
+    <section class="index__products--svg">
+        <div class="scrollify"></div>
+        <div class="row justify-content-center text-center" style="padding-bottom: 5rem;">
+            <div class="col-md-2">
+                <img class="index__products--svg-1" src="../public/images/shipped.svg" alt="">
+                <p class="index__products--text">FREE DELIVERY</p>
+            </div>
+            <div class="col-md-2">
+                  <img class="index__products--svg-2" src="../public/images/award.svg" alt="">
+                    <p class="index__products--text">SUPERIOR QUALITY</p>
+            </div>
+            <div class="col-md-2">
+                <img class="index__products--svg-3" src="../public/images/diet.svg" alt="">
+                <p class="index__products--text">ALWAYS FRESH</p>
+            </div>
+            <div class="col-md-2">
+                <img class="index__products--svg-4" src="../public/images/customer-service.svg" alt="">
+                <p class="index__products--text">24/7 SUPPORT</p>
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: -20rem;">
+            <div class="col-md-3">
                 <!--First Card-->
                 <div class="card">
                     <div class="card__side card__side--front">
@@ -114,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1-of-3">
+            <div class="col-md-3">
                 <!--Second Card-->
                 <div class="card">
                     <div class="card__side card__side--front">
@@ -127,13 +146,13 @@
                         <div class="card__details">
                             <ul>
                                 <li>
-                                    Truffle Oil & Vinegar
+                                    Oil
                                 </li>
                                 <li>
-                                    Truffle Cavair
+                                    Condiments
                                 </li>
                                 <li>
-                                    Truffle Condiments
+                                    Vinegar
                                 </li>
                                 <li class="card__details-animation">
                       <span class="card__details-arrow"
@@ -158,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1-of-3">
+            <div class="col-md-3">
                 <!--Third Card-->
                 <div class="card">
                     <div class="card__side card__side--front">
@@ -170,9 +189,9 @@
                         </h4>
                         <div class="card__details">
                             <ul>
-                                <li>1</li>
-                                <li>2</li>
-                                <li>3</li>
+                                <li>Cavair & Vinegar</li>
+                                <li>Fresh Truffles & Oil </li>
+                                <li>Oil & Vinegar</li>
                                 <li class="card__details-animation">
                       <span class="card__details-arrow"
                       ><img
@@ -188,7 +207,7 @@
                         <div
                             class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
                         >
-                            Best Quality
+                            Best Value
                         </div>
                         <div class="card__side--back--button-box">
                             <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
@@ -197,25 +216,26 @@
                 </div>
             </div>
         </div>
-        <a class="down-arrow" href="#features">
-            <div class="arrow bounce d-none d-md-block">
-                <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </div>
-        </a>
+        <div class="scrollify"></div>
     </section>
+
+@include('partials.featured-products')
+@include('partials.featured-recipes')
+@include('partials.our-details')
+
 </main>
 
-
-
 @include('partials.second-footer')
+
 @include('scripts.scripts')
 @section('truffle-scripts')
 @stop
-<script src="{{asset('node_modules/jquery-scrollify/jquery.scrollify.js')}}"></script>
+<script src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{URL::to('node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
 <script>
     $(function () {
         $.scrollify({
-            section: ".scrollify",
+            section: ".scrollify"
         });
     });
 </script>

@@ -57,9 +57,8 @@ class productsController extends Controller
     public function index_black_truffle_oil()
     {
         $products = Products::all();
-        $weights = Weight::all();
 
-        return view('shop.black-truffle-oil')->with('products', $products)->with('weights', $weights);
+        return view('shop.black-truffle-oil')->with('products', $products);
 
     }
 
@@ -82,6 +81,34 @@ class productsController extends Controller
         $products = Products::all();
 
         return view('shop.cart')->with('products', $products);
+    }
+
+    public function index_truffle_packages()
+    {
+        $products = Products::all();
+
+        return view('shop.truffle-packages')->with('products', $products);
+    }
+
+    public function index_tripple_oil_package()
+    {
+        $products = Products::all();
+
+        return view('shop.tripple-oil-package')->with('products', $products);
+    }
+
+    public function index_truffle_condiments()
+    {
+        $products = Products::all();
+
+        return view('shop.truffle-condiments')->with('products', $products);
+    }
+
+    public function index_preserved_truffle_package()
+    {
+        $products = Products::all();
+
+        return view('shop.preserved-truffle-package')->with('products', $products);
     }
 
 

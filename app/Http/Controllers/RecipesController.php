@@ -29,7 +29,7 @@ class RecipesController extends Controller
 
     public function index_MincedTurkey()
     {
-        $recipes = DB::table('recipes')->where('id', '1')->get();
+        $recipes = DB::table('recipes')->where('name', 'Minced Turkey')->get();
 
 
         return view('recipes.minced-turkey')->with('recipes', $recipes);
@@ -37,14 +37,14 @@ class RecipesController extends Controller
 
     public function index_SearedScallops()
     {
-        $recipes = DB::table('recipes')->where('id', '2')->get();
+        $recipes = DB::table('recipes')->where('name', 'Seared Scallops')->get();
 
         return view('recipes.seared-scallops')->with('recipes', $recipes);
     }
 
     public function index_RibeYeWithTruffle()
     {
-        $recipes = DB::table('recipes')->where('id', '3')->get();
+        $recipes = DB::table('recipes')->where('name', 'Ribeye With Truffles')->get();
 
         return view('recipes.ribeye-with-truffle')->with('recipes', $recipes);
     }
@@ -52,70 +52,70 @@ class RecipesController extends Controller
 
     public function index_TruffleGravy()
     {
-       $recipes = DB::table('recipes')->where('id', '4')->get();
+       $recipes = DB::table('recipes')->where('name', 'Truffle Gravy')->get();
 
         return view('recipes.truffle-gravy')->with('recipes', $recipes);
     }
 
     public function index_Potatoes()
     {
-        $recipes = DB::table('recipes')->where('id', '5')->get();
+        $recipes = DB::table('recipes')->where('name', 'Truffle Potatoes')->get();
 
         return view('recipes.truffle-potatoes')->with('recipes', $recipes);
     }
 
     public function index_Eggs()
     {
-        $recipes = DB::table('recipes')->where('id', '6')->get();
+        $recipes = DB::table('recipes')->where('name', 'Truffle Eggs')->get();
 
         return view('recipes.truffle-eggs')->with('recipes', $recipes);
     }
 
-    public function index_Sausages()
+    public function index_EggToast()
     {
-        $recipes = DB::table('recipes')->where('id', '7')->get();
+        $recipes = DB::table('recipes')->where('name', 'Egg Toeast With Truffles')->get();
 
-        return view('recipes.truffle-sausages')->with('recipes', $recipes);
+        return view('recipes.egg-toeast-with-truffles')->with('recipes', $recipes);
     }
 
     public function index_Risotto()
     {
-        $recipes = DB::table('recipes')->where('id', '8')->get();
+        $recipes = DB::table('recipes')->where('name', 'Truffle Risotto')->get();
 
         return view('recipes.truffle-risotto')->with('recipes', $recipes);
     }
 
     public function index_KaleWithTruffle()
     {
-        $recipes = DB::table('recipes')->where('id', '9')->get();
+        $recipes = DB::table('recipes')->where('name', 'Kale With Truffle')->get();
 
         return view('recipes.kale-with-truffle')->with('recipes', $recipes);
     }
 
     public function index_FrenchFries()
     {
-        $recipes = DB::table('recipes')->where('id', '10')->get();
+        $recipes = DB::table('recipes')->where('name', 'Truffle French Fries')->get();
 
         return view('recipes.truffle-french-fries')->with('recipes', $recipes);
     }
 
-    public function index_EggToast()
+    public function index_Sausages()
     {
-        $recipes = DB::table('recipes')->where('id', '11')->get();
+        $recipes = DB::table('recipes')->where('name', 'Truffle Sausages')->get();
 
-        return view('recipes.egg-toeast-with-truffles')->with('recipes', $recipes);
+        return view('recipes.truffle-sausages')->with('recipes', $recipes);
     }
 
     public function index_BaconSandwich()
     {
-        $recipes = DB::table('recipes')->where('id', '12')->get();
+        $recipes = DB::table('recipes')->where('name', 'Truffle Bacon Sandwich')->get();
 
         return view('recipes.bacon-sandwich-and-truffle-sauce')->with('recipes', $recipes);
     }
 
     public function index_Burger()
     {
-        $recipes = DB::table('recipes')->where('id', '13')->get();
+        $recipes = DB::table('recipes')->where('name', 'Burger With Truffles')->get();
 
         return view('recipes.burger-with-truffles')->with('recipes', $recipes);
     }

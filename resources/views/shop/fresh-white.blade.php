@@ -58,7 +58,7 @@
                 </form>
 
                 <p>{!!$product->description!!}</p>
-                <div class="container-chevron" style="top: -5rem;">
+                <div class="col-1 hidden-xs col-centered container-chevron">
                     <div class="chevron"></div>
                     <div class="chevron"></div>
                     <div class="chevron"></div>

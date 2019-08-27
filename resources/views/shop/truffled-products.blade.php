@@ -30,7 +30,7 @@
         @if($product->category == "truffled-products")
             <div class="col-md-4" style="height: 38rem;">
                 <a href="{{route($product->webPath)}}">
-                    <img class="img-fluid mx-auto d-block h-75" src="{{$product->imagePath}}" alt="">
+                    <img class="img-fluid mx-auto d-block h-75" src="{{asset('storage/' .$product->image)}}" alt="">
                 </a>
                 <h4 style="text-transform: uppercase; font-weight: 700; text-align: center;">{{$product->name}}</h4>
             </div>

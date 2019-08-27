@@ -41,9 +41,18 @@ Route::get('/shop/black-truffle-oil', 'ProductsController@index_black_truffle_oi
 Route::get('/shop/white-truffle-oil', 'ProductsController@index_white_truffle_oil')->name('shop.white-truffle-oil');
 Route::get('/shop/truffle-vinegar', 'ProductsController@index_truffle_vinegar')->name('shop.truffle-vinegar');
 
+/*--- Truffle Packages ---*/
+
+Route::get('truffle-packages', 'ProductsController@index_truffle_packages')->name('shop.truffle-packages');
+
+Route::get('/shop/truffle-condiments', 'ProductsController@index_truffle_condiments')->name('shop.truffle-condiments');
+Route::get('/shop/tripple-oil-package', 'ProductsController@index_tripple_oil_package')->name('shop.tripple-oil-package');
+Route::get('/shop/preserved-truffle-package', 'ProductsController@index_preserved_truffle_package')->name('shop.preserved-truffle-package');
+
 /*Recipes*/
 
 Route::get('/recipes', 'RecipesController@index_allrecipes')->name('recipes.allrecipes');
+Route::get('/featured-recipes', 'FeaturedRecipesController@index')->name('featured-recipes');
 
 Route::get('/recipes/minced-turkey', 'RecipesController@index_MincedTurkey')->name('recipes.minced-turkey');
 Route::get('/recipes/seared-scallops', 'RecipesController@index_SearedScallops')->name('recipes.seared-scallops');

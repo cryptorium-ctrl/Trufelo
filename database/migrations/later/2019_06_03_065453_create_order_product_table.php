@@ -25,6 +25,8 @@ class CreateOrderProductTable extends Migration
 
             $table->integer('quantity')->unsigned();
             $table->timestamps();
+            $table->date('created_at');
+            $table->date('updated_at');
         });
     }
 

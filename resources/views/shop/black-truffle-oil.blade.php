@@ -44,12 +44,7 @@
                     <input type="hidden" name="id" value="{{$product->id}}">
                     <input type="hidden" name="name" value="{{$product->name}}">
                     <input type="hidden" name="price" value="{{$product->price}}">
-                    <input type="hidden" name="weight" value="{{$product->weight}}">
-{{--                    <select data-id="{{$product->rowID}}">--}}
-{{--                        @foreach($weights as $weight)--}}
-{{--                            <option value="{{$weight->White_Truffle_Oil}}">{{$weight->White_Truffle_Oil}}</option>--}}
-{{--                        @endforeach--}}
-{{--                    </select>--}}
+
                     <button type="submit" class="btn btn-turquoise" id="shopping-cart-add"> ADD TO CART </button>
                 </form>
 

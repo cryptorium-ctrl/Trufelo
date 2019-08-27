@@ -14,11 +14,17 @@ class RecipesTable extends Migration
     public function up()
     {
         Schema::create('recipes', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->autoIncrement();
             $table->string('name')->unique();
-            $table->string('description');
-            $table->string('imagePath');
-            $table->timestamp('email_verified_at')->nullable();
+            $table->longText('description');
+            $table->double('preparationTime');
+            $table->double('cookingTime');
+            $table->string('ingredients');
+            $table->string('method');
+            $table->string('webPath');
+            $table->string('image');
+            $table->date('created_at'); //required by Voyager
+            $table->date('updated_at'); //required by Voyager
         });
     }
 

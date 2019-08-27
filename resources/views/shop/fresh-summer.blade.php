@@ -19,7 +19,6 @@
 @foreach($products as $product)
 
     @if($product->name == "Summer Truffle")
-
         <div class="row justify-content-center align-items-center"> <!-- Heading -->
             {{--    <div class="scrollify">--}}
             <div id="shop-online" class="offset">
@@ -32,9 +31,10 @@
         <div class="row justify-content-center align-items-center"> <!-- Product Description -->
             <div class="col-md-4">
                 <img class="img-fluid" src="{{asset('storage/' .$product->image)}}" alt="">
+
             </div>
-            <div class="col-md-4" style="z-index: 9999; top: 2rem;">
-                <h4>PACKAGE OF 200G FOR €50</h4>
+            <div class="col-md-4" style="z-index: 9999; top: 2rem;" id="description-row">
+                <h4>PACKAGE OF 200G FOR €{{$product->price}}</h4>
                 {{--                <h4>SELECT SIZE</h4>--}}
                 {{--                <select class="mySelect" id="mySelect" onchange="myFunction()" data-id="{{$product->rowId}}">--}}
                 {{--                    <option value=""></option>--}}
@@ -57,17 +57,15 @@
                 <p>{!!$product->description!!}</p>
 
 
-             <div class="col-1 col-centered">
-                <a class="down-arrow">
-                    <div class="arrow bounce d-none d-md-block">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </div>
-                </a>
+                <div class="col-1 hidden-xs col-centered container-chevron">
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </div>
+
              </div>
-
-
-            </div>
         </div>
+
 
 
     @endif

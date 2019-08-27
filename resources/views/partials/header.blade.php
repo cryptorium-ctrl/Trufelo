@@ -62,7 +62,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link-second" href="#" style="text-transform: uppercase; text-decoration: none; color:#fff;">Log in</a>
+                @guest
+                <a class="nav-link-second" href="{{route('login')}}" style="text-transform: uppercase; text-decoration: none; color:#fff;"><img
+                        src="../public/images/black-male-user-symbol.svg" alt="" style="height: 1.8rem"></a>
+{{--                <a class="nav-link-second" href="{{route('register')}}" style="text-transform: uppercase; text-decoration: none; color:#fff;">Register</a>--}}
+                    @else
+                    <a class="nav-link-second" href="{{route('logout')}}" style="text-transform: uppercase; text-decoration: none; color:#fff;">Log Out</a>
+                    @endguest
             </li>
         </ul>
     </div>

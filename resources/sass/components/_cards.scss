@@ -6,9 +6,12 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 50rem;
-  margin-top: 40vh;
+  width: 75%;
+  margin-top: 0;
+
 
   &__side {
+
     background-color: $color-white;
     color: #fff;
     font-size: 2rem;
@@ -44,8 +47,8 @@
       &-1 {
         background-image: linear-gradient(
                         to right bottom,
-                        $color-black,
-                        $color-primary-light
+                $color-gray-dark,
+                $color-secondary-darker
         );
       }
 
@@ -56,6 +59,14 @@
                         $color-primary-dark
         );
       }
+
+        &-3 {
+            background-image: linear-gradient(
+                    to right bottom,
+                    $color-primary-light,
+                    $color-primary-dark
+            );
+        }
     }
   }
 
@@ -76,8 +87,8 @@
     &--1 {
       background-image: linear-gradient(
                       to right top,
-                      rgba(189, 150, 42, 0.1),
-                      rgba(189, 150, 42, 0.3)
+                      rgba($color-primary-light, 0.8),
+                      rgba($color-secondary-darker, 0.8)
       ),
       url('../img/truffle.jpg');
 
@@ -88,10 +99,10 @@
     &--2 {
       background-image: linear-gradient(
                       to right top,
-                      rgba(189, 150, 42, 0.35),
-                      rgba(189, 150, 42, 0.3)
+              rgba($color-primary-light, 0.8),
+              rgba($color-secondary-darker, 0.8)
       ),
-      url('../img/truffle.jpg');
+      url('../img/truffleoil-1.jpg');
 
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -100,8 +111,8 @@
     &--3 {
       background-image: linear-gradient(
                       to right top,
-                      rgba(189, 150, 42, 0.1),
-                      rgba(189, 150, 42, 0.3)
+              rgba($color-primary-light, 0.8),
+              rgba($color-secondary-darker, 0.8)
       ),
       url('../img/truffle.jpg');
 
@@ -130,24 +141,24 @@
     &--1 {
       background-image: linear-gradient(
                       to right bottom,
-                      rgba($color-secondary-light, 0.85),
-                      rgba($color-secondary-dark, 0.85)
+              rgba($color-primary-light, 0.8),
+              rgba($color-secondary-darker, 0.8)
       );
     }
 
     &--2 {
       background-image: linear-gradient(
                       to right bottom,
-                      rgba($color-secondary-light, 0.85),
-                      rgba($color-secondary-dark, 0.85)
+              rgba($color-primary-light, 0.8),
+              rgba($color-secondary-darker, 0.8)
       );
     }
 
     &--3 {
       background-image: linear-gradient(
                       to right bottom,
-                      rgba($color-secondary-light, 0.85),
-                      rgba($color-secondary-dark, 0.85)
+              rgba($color-primary-light, 0.8),
+              rgba($color-secondary-darker, 0.8)
       );
     }
   }
@@ -160,8 +171,8 @@
       width: 40px;
       background-image: linear-gradient(
                       to right bottom,
-                      $color-secondary-light,
-                      $color-secondary-dark
+              rgba($color-primary-light, 0.8),
+              rgba($color-primary-dark, 0.8)
       );
       border-radius: 50%;
       // display: inline-block;
@@ -189,6 +200,7 @@
       li {
         text-align: center;
         text-transform: uppercase;
+        text-shadow: 2px #000000;
         font-family: Lato;
         font-weight: 700;
         font-size: 1.5rem;
@@ -196,6 +208,7 @@
         margin: 1rem 1rem;
         color: $color-gray-dark;
         position: relative;
+
 
         &:not(:last-child) {
           border-bottom: 1px solid $color-gray-light-2;

@@ -19,11 +19,11 @@
 
 @foreach($recipes as $recipe)
 <div class="container">
-{{--        {{dd($recipe->imagePath)}}--}}
+{{--        {{dd($recipe->image)}}--}}
     <div class="row">
         <div class="col-md-12" style="margin-top:7.6rem;">
 
-            <img class="thumbnail img-fluid" src="{{asset('storage/' .$recipe->imagePath)}}" alt="image" style="max-height:45rem;">
+            <img class="thumbnail img-fluid" src="{{asset('storage/' .$recipe->image)}}" alt="image" style="max-height:45rem;">
             <h3 style="text-transform: uppercase; text-align: center; text-shadow: .5px .5px #000;">{{$recipe->name}}</h3>
             <h5 class="heading-underline"></h5>
             <p>{!!$recipe->description!!}</p>

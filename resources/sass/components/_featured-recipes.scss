@@ -1,0 +1,27 @@
+.featured-recipes {
+
+    font-family: Lato, sans-serif;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    &__header {
+        font-size: 1.5rem;
+        color: $color-secondary-darker;
+        padding: 1.5rem 0 1.5rem 0;
+    }
+
+    &__overline, &__underline {
+        width: 100vw;
+        height: 1px;
+        border-bottom: 2px solid $color-secondary-darker;
+    }
+
+}

@@ -58,7 +58,7 @@
 
                     <!-- PRODUCT -->
                     <div class="container w-100">
-                    <div class="row shopping-cart align-items-center">
+                        <div class="row shopping-cart align-items-center">
                         <div class="col-md-2">
                             <a href="{{route($item->model->webPath)}}">
                                 <img class="img-fluid mt-1" src="{{asset('storage/' .$item->model->image)}}"></a>
@@ -126,15 +126,18 @@
 </div>
 
 
-<div class="col-md-1" style="margin-top: 20vh; margin-bottom: 42vh;">
-    <a href="{{route('shop.index')}}" class="btn btn-turquoise" style="width: 10rem;">TO THE ONLINE STORE</a>
+<div class="col-md-12 text-center">
+    <a href="{{route('index')}}" class="btn btn-turquoise" style="width: 10rem;">TO THE ONLINE STORE</a>
+</div>
+
+<div style="margin-top: 66vh;">
 </div>
 
 @endif  <!-- End of Check if Cart is Empty -->
 
 @include('partials.second-footer')
 @include('scripts.scripts')
-@section('truffle-scripts')
+@section('cart-scripts')
 @stop
 
 </body>

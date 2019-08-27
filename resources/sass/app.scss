@@ -34,8 +34,9 @@
 //Ribbons
 @import "components/ribbons.scss";
 
-//Feature-Box
-@import "components/feature-box.scss";
+//Featured-Boxes
+@import "components/featured-products";
+@import "components/featured-recipes";
 
 //Cards
 @import "components/cards.scss";
@@ -45,7 +46,8 @@
 
 //Layouts
 @import "layouts/header.scss";
-
+@import "layouts/products-section.scss";
+@import "layouts/our-details.scss";
 
 //Grid
 @import "layouts/grid.scss";

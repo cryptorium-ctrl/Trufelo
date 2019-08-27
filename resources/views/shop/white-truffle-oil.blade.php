@@ -56,7 +56,7 @@
                 </form>
 
                 <p style="text-align: justify-all">{!!$product->description!!}</p>
-                <div class="container">
+                <div class="col-1 hidden-xs col-centered container-chevron">
                     <div class="chevron"></div>
                     <div class="chevron"></div>
                     <div class="chevron"></div>

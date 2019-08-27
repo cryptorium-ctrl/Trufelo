@@ -18,6 +18,8 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
+$color-font-gray: #505962;
+
 $color-primary: #ce4040;
 $color-primary-light: #ddd5d5;
 $color-primary-dark: #856936;
@@ -25,7 +27,8 @@ $color-primary-dark: #856936;
 
 $color-secondary-light: #ffb900;
 $color-secondary-none: rgb(240, 205, 9);
-$color-secondary-dark: #ff7730;
+$color-secondary-dark: #ddae3c;
+$color-secondary-darker: #B8860B;
 
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
@@ -44,6 +47,6 @@ $medium-font-size: 16rem;
 
 // Grid
 
-$grid-width: 114rem;
+$grid-width: 100%;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;

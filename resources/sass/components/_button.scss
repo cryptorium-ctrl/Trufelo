@@ -86,3 +86,94 @@
     transform: translateY(0);
   }
 }
+
+.featured-section-btn {
+    margin-left: 5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border: 2px solid $color-secondary-darker;
+    border-radius: .5rem;
+    box-shadow: 0 1px 1px $color-secondary-darker;
+    transition: all .2s;
+    letter-spacing: 1rem;
+    color: $color-secondary-darker;
+    -webkit-transition: all 1s ease;
+
+    &:link:hover, &:visited:hover {
+        color: #ddae3c;
+        text-shadow: none;
+    }
+
+    &:link:hover:after, &:visited {
+    }
+
+
+    &:hover {
+        text-decoration: none;
+        opacity: 1;
+        transform: translateX(-10%);
+    }
+
+    &:after {
+        opacity: .5;
+    }
+
+    & span {
+        text-decoration: none;
+        color: $color-secondary-darker;
+        transform: translateX(-10%);
+    }
+
+}
+
+.hvr-shutter-out-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #e1e1e1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: $color-secondary-darker;
+    border: 2px solid $color-secondary-darker;
+    padding: 1rem;
+    letter-spacing: 1rem;
+}
+.hvr-shutter-out-vertical:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $color-secondary-darker;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+    color: white;
+    text-decoration: none;
+}
+.hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+    -webkit-transform: scaleY(1.1);
+    transform: scaleY(1.1);
+    text-decoration: none;
+}
+
+

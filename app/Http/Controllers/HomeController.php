@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Products;
+use App\Recipes;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $products = Products::all();
+        $recipes = Recipes::all();
+
+        return view('index')->with('products', $products)->with('recipes', $recipes);
     }
 
     public function logout () {

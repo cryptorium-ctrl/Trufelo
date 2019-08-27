@@ -36,7 +36,9 @@
 {{--        document.getElementById("demo").innerHTML = "Price:" + "€" + x;--}}
 {{--    }--}}
 {{--</script>--}}
-
+@yield('cart-scripts')
+<script src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{URL::to('bootstrap-4.3.1-dist/js/bootstrap.min.js')}}"></script>
 
 <!-- Add To Cart Script -->
 <script>

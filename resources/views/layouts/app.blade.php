@@ -10,31 +10,24 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/arrow.css">
-    <link rel="stylesheet" href="css/fixed.css">
-    <link rel="stylesheet" href="css/waypoints.css">
+
+
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 
 
 <body>
     <div id="app">
-        @extends('partials.second-header')
+        @extends('partials.header')
 {{--        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">--}}
 {{--            <div class="container">--}}
 {{--                <a class="navbar-brand" href="{{ url('/') }}">--}}
@@ -84,9 +77,10 @@
 {{--            </div>--}}
 {{--        </nav>--}}
 
-        <main class="py-4">
+        <main class="py-4" style="margin-top: 10rem; margin-bottom: 22rem;">
             @yield('content')
         </main>
+
 
         @extends('partials.second-footer')
 

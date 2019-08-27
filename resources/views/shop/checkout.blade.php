@@ -45,13 +45,14 @@
 
                             <div>
                                 @foreach(Cart::content() as $item)
-                                    <h6 class="my-0">{{$item->model->name}}</h6>
+                                    <h6 class="my-0" style="font-weight: 700">{{$item->model->name}}</h6>
+                                    <h7 style="text-transform: uppercase; font-size: .7rem;">{{$item->qty}} <span style="font-size: .5rem">x</span> €<span>{{$item->model->price}}</span></h7>
                                     <input type="hidden" {{$item->id}}>
                                     <input type="hidden" {{$item->qty}}>
-{{--                                    {{dd($item->qty)}}--}}
+
                                 @endforeach
                             </div>
-                            <span class="text-muted">{{$item->model->price}}</span>
+
                         </li>
 
 

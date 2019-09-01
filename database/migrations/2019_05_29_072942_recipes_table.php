@@ -19,10 +19,11 @@ class RecipesTable extends Migration
             $table->longText('description');
             $table->double('preparationTime');
             $table->double('cookingTime');
-            $table->string('ingredients');
-            $table->string('method');
+            $table->longtext('ingredients');
+            $table->longtext('method');
             $table->string('webPath');
             $table->string('image');
+            $table->string('thumbImagePath');
             $table->date('created_at'); //required by Voyager
             $table->date('updated_at'); //required by Voyager
         });

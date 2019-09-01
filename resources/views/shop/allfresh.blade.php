@@ -7,8 +7,9 @@
 
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
+    @include('styles.style')
+    @section('fresh-truffle-style')
+    @stop
 
 </head>
 

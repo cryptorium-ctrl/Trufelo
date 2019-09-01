@@ -5,8 +5,8 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
-  width: 75%;
+  height: 60rem;
+  width: 80%;
   margin-top: 0;
 
 
@@ -14,9 +14,9 @@
 
     background-color: $color-white;
     color: #fff;
-    font-size: 2rem;
+    font-size: 5rem;
 
-    height: 50rem;
+    height: 60rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -47,7 +47,7 @@
       &-1 {
         background-image: linear-gradient(
                         to right bottom,
-                $color-gray-dark,
+                $color-primary-light,
                 $color-secondary-darker
         );
       }
@@ -56,7 +56,7 @@
         background-image: linear-gradient(
                         to right bottom,
                         $color-primary-light,
-                        $color-primary-dark
+                        $color-secondary-darker
         );
       }
 
@@ -64,7 +64,7 @@
             background-image: linear-gradient(
                     to right bottom,
                     $color-primary-light,
-                    $color-primary-dark
+                    $color-secondary-light
             );
         }
     }
@@ -81,7 +81,7 @@
   //FRONT SIDE STYLING
   &__picture {
     background-size: cover;
-    height: 23rem;
+    height: 25rem;
     background-blend-mode: screen;
 
     &--1 {
@@ -102,7 +102,7 @@
               rgba($color-primary-light, 0.8),
               rgba($color-secondary-darker, 0.8)
       ),
-      url('../img/truffleoil-1.jpg');
+      url('../img/truffled-product.jpg');
 
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -114,7 +114,7 @@
               rgba($color-primary-light, 0.8),
               rgba($color-secondary-darker, 0.8)
       ),
-      url('../img/truffle.jpg');
+      url('../img/oil-package.jpg');
 
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -122,7 +122,7 @@
   }
 
   &__heading {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
     text-align: right;
@@ -172,7 +172,7 @@
       background-image: linear-gradient(
                       to right bottom,
               rgba($color-primary-light, 0.8),
-              rgba($color-primary-dark, 0.8)
+              rgba($color-secondary-darker, 0.8)
       );
       border-radius: 50%;
       // display: inline-block;
@@ -201,9 +201,9 @@
         text-align: center;
         text-transform: uppercase;
         text-shadow: 2px #000000;
-        font-family: Lato;
+        font-family: Lato, sans-serif;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1rem;
         margin: 1rem 1rem;
         color: $color-gray-dark;

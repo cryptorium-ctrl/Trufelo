@@ -1,77 +1,19 @@
-.index__products {
+.index-products {
+    margin-top: 25vh;
+    margin-bottom: 20vh;
+    font-family: Lato, sans-serif;
 
 
-    &--text {
-        text-transform: uppercase;
-        text-align: center;
+    &__overline, &__underline {
+        width: 100vw;
+        height: 1px;
+        border-bottom: 2px solid #B8860B;
     }
-    &--svg {
-        margin-top: 20vh;
-        &-1 {
-            border-radius: 50%;
-            padding: 3rem;
-            border: 2px solid black;
-            fill: #ffffff;
-            height: 30%;
-            cursor: pointer;
-            background: radial-gradient(circle at center, black 66.5%, white 68%);
-            opacity: 0.85;
-        }
 
-        &-1:hover {
-            background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-            cursor: pointer;
-            border: 2px solid darkgoldenrod;
-        }
-
-        &-2 {
-            background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-            border-radius: 50%;
-            padding: 2rem;
-            border: 2px solid darkgoldenrod;
-            fill: #fff3cd;
-            height: 30%;
-            opacity: 0.85;
-        }
-
-        &-2:hover {
-            background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-            cursor: pointer;
-            border: 2px solid darkgoldenrod;
-        }
-
-        &-3 {
-            background: radial-gradient(circle at center, cadetblue 66.5%, white 68%);
-            border-radius: 50%;
-            padding: 2rem;
-            border: 2px solid cadetblue;
-            fill: #fff3cd;
-            height: 30%;
-            opacity: 0.85;
-        }
-
-        &-3:hover {
-            background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-            cursor: pointer;
-            border: 2px solid darkgoldenrod;
-        }
-
-        &-4 {
-            background: radial-gradient(circle at center,darkorange 66.5%, white 68%);
-            opacity: 0.85;
-            border-radius: 50%;
-            padding: 2rem;
-            border: 2px solid darkorange;
-            fill: #fff3cd;
-            height: 30%;
-        }
-
-        &-4:hover {
-            background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-            cursor: pointer;
-            border: 2px solid darkgoldenrod;
-        }
+    &__header {
+        font-size: 2rem;
+        color: #B8860B;
+        padding: 1.5rem 0 1.5rem 0;
     }
 }
-
 

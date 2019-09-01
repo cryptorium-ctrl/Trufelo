@@ -21,10 +21,9 @@
 
     <label for="navi-toggle" class="navigation__button">
         <div class="header__logo-box">
-            <img
-                class="header__logo header__logo--glowEffect"
-                src="../public/assets/img/logo/logo.png"
-                alt="header__logo"
+            <img class="header__logo header__logo--glowEffect"
+                src="{{asset('../storage/app/public/logo/logo.svg')}}"
+                alt="header__logo" id="logo"
             />
         </div>
     </label>
@@ -54,7 +53,7 @@
                 <a href="#" class="navigation__link">ABOUT TRUFFLES</a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">CONTACT</a>
+                <a href="#" class="navigation__link">CONTACTS</a>
             </li>
         </ul>
     </nav>
@@ -72,153 +71,8 @@
 </header>
 
 <main>
-    <section class="index__products--svg">
-        <div class="scrollify"></div>
-        <div class="row justify-content-center text-center" style="padding-bottom: 5rem;">
-            <div class="col-md-2">
-                <img class="index__products--svg-1" src="../public/images/shipped.svg" alt="">
-                <p class="index__products--text">FREE DELIVERY</p>
-            </div>
-            <div class="col-md-2">
-                  <img class="index__products--svg-2" src="../public/images/award.svg" alt="">
-                    <p class="index__products--text">SUPERIOR QUALITY</p>
-            </div>
-            <div class="col-md-2">
-                <img class="index__products--svg-3" src="../public/images/diet.svg" alt="">
-                <p class="index__products--text">ALWAYS FRESH</p>
-            </div>
-            <div class="col-md-2">
-                <img class="index__products--svg-4" src="../public/images/customer-service.svg" alt="">
-                <p class="index__products--text">24/7 SUPPORT</p>
-            </div>
-        </div>
-        <div class="row justify-content-center" style="margin-top: -20rem;">
-            <div class="col-md-3">
-                <!--First Card-->
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <div class="card__picture card__picture--1">
-                            &nbsp
-                        </div>
-                        <h4 class="card__heading">
-                  <span class="card__heading-span--1">
-                    Fresh &nbsp &nbsp &nbsp Truffles</span
-                  >
-                        </h4>
-                        <div class="card__details">
-                            <ul>
-                                <li>Winter Truffles</li>
-                                <li>Summer Truffles</li>
-                                <li>White Truffles</li>
-                                <li class="card__details-animation">
-                      <span class="card__details-arrow"
-                      ><img
-                              class="card__details-arrow-pic"
-                              src="../public/assets/img/logo/curve-arrow.png"
-                              alt=""
-                          /></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                        <div
-                            class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
-                        >
-                            Best Quality
-                        </div>
-                        <div class="card__side--back--button-box">
-                            <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <!--Second Card-->
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <div class="card__picture card__picture--2">
-                            &nbsp
-                        </div>
-                        <h4 class="card__heading">
-                            <span class="card__heading-span--2">Truffled Products</span>
-                        </h4>
-                        <div class="card__details">
-                            <ul>
-                                <li>
-                                    Oil
-                                </li>
-                                <li>
-                                    Condiments
-                                </li>
-                                <li>
-                                    Vinegar
-                                </li>
-                                <li class="card__details-animation">
-                      <span class="card__details-arrow"
-                      ><img
-                              class="card__details-arrow-pic"
-                              src="../public/assets/img/logo/curve-arrow.png"
-                              alt=""
-                          /></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-2">
-                        <div
-                            class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
-                        >
-                            Best Price
-                        </div>
-                        <div class="card__side--back--button-box">
-                            <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <!--Third Card-->
-                <div class="card">
-                    <div class="card__side card__side--front">
-                        <div class="card__picture card__picture--3">
-                            &nbsp
-                        </div>
-                        <h4 class="card__heading">
-                            <span class="card__heading-span--3">Truffle Packages</span>
-                        </h4>
-                        <div class="card__details">
-                            <ul>
-                                <li>Cavair & Vinegar</li>
-                                <li>Fresh Truffles & Oil </li>
-                                <li>Oil & Vinegar</li>
-                                <li class="card__details-animation">
-                      <span class="card__details-arrow"
-                      ><img
-                              class="card__details-arrow-pic"
-                              src="../public/assets/img/logo/curve-arrow.png"
-                              alt=""
-                          /></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-3">
-                        <div
-                            class="corner-ribbon corner-ribbon__sticky corner-ribbon__top-right corner-ribbon__red corner-ribbon__shadow"
-                        >
-                            Best Value
-                        </div>
-                        <div class="card__side--back--button-box">
-                            <a href="#" class="btn btn--white btn--animated">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scrollify"></div>
-    </section>
 
+@include('partials.index-products')
 @include('partials.featured-products')
 @include('partials.featured-recipes')
 @include('partials.our-details')
@@ -232,6 +86,17 @@
 @stop
 <script src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{URL::to('node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
+<script>
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("glowEffect").className = "glowEffect-after";
+        } else {
+            document.getElementById("glowEffect").className = "";
+        }
+    }
+</script>
 <script>
     $(function () {
         $.scrollify({

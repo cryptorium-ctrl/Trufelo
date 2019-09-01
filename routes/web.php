@@ -11,12 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-
-Route::get('/index', 'HomeController@index')->name('index');
+Route::get('/', 'HomeController@index')->name('index');
 
 
 Auth::routes();

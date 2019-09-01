@@ -1,5 +1,4 @@
 .featured-products {
-
     margin-top: 10vh;
     margin-bottom: 20vh;
     font-family: Lato, sans-serif;
@@ -26,16 +25,30 @@
         border-bottom: 2px solid $color-secondary-darker;
     }
 
+    &__dark-shadow {
+        color: black;
+        background-color: rgba(0, 0, 0, .5);
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        position: absolute;
+        right: 5.8rem;
+        margin-top: 1.2rem;
+    }
+
     &__carousel {
         margin-top: 1vh;
     }
 
-}
-#featured-products__card-text {
-    opacity: 0;
+    &__card-text {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__img:hover ~ &__card-text {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
-.card:hover ~ .featured-products__card-text{
-    opacity: 1;
-}
 

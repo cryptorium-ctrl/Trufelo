@@ -122,7 +122,7 @@
                 </div>
                 <div class="col-md-8 order-md-1">
                     <h4 class="mb-3">CUSTOMER INFORMATION</h4>
-                    <form class="needs-validation" novalidate id="payment-form" action="{{route('shop.checkout.store')}}" method="POST">
+                    <form class="needs-validation" id="payment-form" action="{{route('shop.checkout.store')}}" method="POST">
                                                 {{csrf_field()}}
                         <div class="row">
                             <div class="col-md-6 mb-3">
@@ -143,9 +143,11 @@
 
                         <div class="mb-3">
                             @if(auth()->user())
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" value="{{ auth()->user()->email }}" readonly>
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" value="{{ auth()->user()->email }}" readonly required>
                             @else
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" value="{{ old('email') }}" required>
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" value="{{ old('email') }}" required>
                             @endif
                             <div class="invalid-feedback">
                                 Please enter a valid email address for shipping updates.
@@ -153,13 +155,15 @@
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="country" name="country" placeholder="Enter Your Country" required>
+                            <label for="country">Country</label>
+                            <input type="text" class="form-control" id="country" name="country" placeholder="Enter Your Country" required/>
                             <div class="invalid-feedback">
                                 Please enter your country.
                             </div>
                         </div>
 
                         <div class="mb-3">
+                            <label for="city">City</label>
                             <input type="text" class="form-control" id="city" name="city" placeholder="Enter Your City">
                             <div class="invalid-feedback">
                                 Please enter your city.
@@ -167,53 +171,54 @@
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="address" name="address" placeholder="Enter Your Address">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="Enter Your Address" required>
                             <div class="invalid-feedback">
                                 Please enter your address.
                             </div>
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
                             <div class="invalid-feedback">
                                 Please enter your phone number.
                             </div>
                         </div>
 
                         <div class="mb-3">
-                                <span class="text">Required</span>
-
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Provide any notes if you have for your order">
+                            <label for="notes">Provide any notes if you have for your order</label>
+                            <input type="text" class="form-control" id="notes" name="notes">
                         </div>
 
-                        <hr class="mb-4">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="save-info">
-                            <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                        </div>
-                        <hr class="mb-4">
+{{--                        <hr class="mb-4">--}}
+{{--                        <div class="custom-control custom-checkbox">--}}
+{{--                            <input type="checkbox" class="custom-control-input" id="save-info">--}}
+{{--                            <label class="custom-control-label" for="save-info">Save this information for next time</label>--}}
+{{--                        </div>--}}
+{{--                        <hr class="mb-4">--}}
 
-                        <h4 class="mb-3">Payment</h4>
+{{--                        <h4 class="mb-3">Payment</h4>--}}
 
-                        <div class="d-block my-3">
-                            <div class="custom-control custom-radio">
-                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-                                <label class="custom-control-label" for="credit">Credit card</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="debit">Debit card</label>
-                            </div>
-                            <div class="custom-control custom-radio">
-                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-                                <label class="custom-control-label" for="paypal">Paypal</label>
-                            </div>
-                        </div>
+{{--                        <div class="d-block my-3">--}}
+{{--                            <div class="custom-control custom-radio">--}}
+{{--                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>--}}
+{{--                                <label class="custom-control-label" for="credit">Credit card</label>--}}
+{{--                            </div>--}}
+{{--                            <div class="custom-control custom-radio">--}}
+{{--                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>--}}
+{{--                                <label class="custom-control-label" for="debit">Debit card</label>--}}
+{{--                            </div>--}}
+{{--                            <div class="custom-control custom-radio">--}}
+{{--                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>--}}
+{{--                                <label class="custom-control-label" for="paypal">Paypal</label>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
 
                         <div class="col-md-6 mb-3">
-                            <label for="cc-name">Name on card</label>
+                            <label for="name_on_card">Name on card</label>
                             <input type="text" class="form-control" id="name_on_card" name="name_on_card"
-                                   placeholder="" required>
+                                   placeholder="" required/>
                             <small class="text-muted">Full name as displayed on card</small>
                             <div class="invalid-feedback">
                                 Name on card is required
@@ -231,9 +236,9 @@
                                 <div id="card-errors" role="alert"></div>
 
                                 <hr class="mb-4">
-                                <button type="submit" class="button-primary full-width">Complete Order</button>
                             </div>
                         </div>
+                        <button type="submit" class="button-primary full-width">Complete Order</button>
                     </form>
                 </div>
             </div>

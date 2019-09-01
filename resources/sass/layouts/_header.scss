@@ -13,6 +13,7 @@
 
   &__logo-box {
     position: absolute;
+    border-radius: 50%;
     top: -.5rem;
     right: -1rem;
   }
@@ -24,8 +25,15 @@
       border-radius: 100px;
       animation: glowEffect 3s ease infinite;
       animation-delay: 0ms;
-
     }
+
+    &--glowEffect-after {
+        border-radius: 100px;
+        animation: glowEffect-after 3s ease infinite;
+        animation-delay: 0ms;
+    }
+
+
   }
 
   &__text-box {
@@ -34,6 +42,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+
   }
 
 }

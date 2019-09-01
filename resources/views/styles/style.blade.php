@@ -1,4 +1,5 @@
 @yield('truffle-styles')
+<link rel="shortcut icon" href="{{asset('favicon.ico') }}">
 <link rel="stylesheet" href="{{URL::to('bootstrap-4.3.1-dist/css/bootstrap.css')}}">
 <link rel="stylesheet" href="{{URL::to('css/icofont.min.css')}}">
 <link rel="stylesheet" href="{{URL::to('css/styles.css')}}">

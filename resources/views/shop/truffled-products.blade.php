@@ -19,7 +19,7 @@
 <body>
 <div class="row justify-content-center" style="margin-top: 8rem;">
     <div class="col-md-6">
-        <h1 class="text-center">FRESH TRUFFLES</h1>
+        <h1 class="text-center">TRUFFLED PRODUCTS</h1>
         <p style="text-align: center;"> Savour this culinary treasure at its best moment and enjoy the flavour of the most delicious recently harvested truffles.
             It has never been this easy to be able to enjoy the Magnatum truffle, the Melanosporum truffle, the Aestivum truffle and the Australian black truffle (Tuber Melanosporum).
             All our products have quality certificates and their harvest is respectful of the environment.</p>

@@ -2,12 +2,13 @@
     <div class="section"></div>
     <div class="row justify-content-center">
         <span class="featured-products__overline"></span>
-        <h3 class="featured-products__header"> Sign up and receive discount codes, free samples and many promotions! <a href="" class="hvr-shutter-out-vertical ml-5">SIGNUP</a></h3>
+            <h3 class="featured-products__header"> Sign up and receive discount codes, free samples and many promotions! <a href="#" class="hvr-shutter-out-vertical ml-5">SIGNUP</a></h3>
+        <span class="featured-products__dark-shadow"></span>
         <span class="featured-products__underline"></span>
     </div>
         <div class="row justify-content-center">
             <div>
-                <h2 class="heading">Featured Products</h2>
+                    <h2 class="heading">Featured Products</h2>
                 <div class="heading-underline"></div>
             </div>
         </div>
@@ -18,11 +19,12 @@
                         <a href="{{route($product->webPath)}}">
                             <img class="featured-products__img card-img-top img-fluid border-bottom" src="{{asset('storage/' .$product->image)}}" alt="Card image cap" id="featured-img">
                         </a>
-                        <p class="featured-products__card-text">50</p>
+
                         <div class="card-body">
                             <h3 class="card-title text-center align-items-center" id="might-like-card">{{$product->name}}</h3>
 
                         </div>
+                        <p class="featured-products__card-text">50</p>
                     </div>
                 </div>
             @endforeach

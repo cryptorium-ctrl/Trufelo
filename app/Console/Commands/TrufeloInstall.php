@@ -19,7 +19,7 @@ class TrufeloInstall extends Command
      *
      * @var string
      */
-    protected $description = 'Install dummy data for Trufelo Application';
+    protected $description = 'Install example data for Trufelo Application';
 
     /**
      * Create a new command instance.
@@ -38,30 +38,36 @@ class TrufeloInstall extends Command
      */
     public function handle()
     {
-        if ($this->confirm('This will delete all your current data and install the dummy data. Do you proceed?')) {
+        if ($this->confirm('This will delete all your current data and install the example data. Do you wish to proceed?')) {
             File::deleteDirectory(public_path('storage/products/dummy'));
-        }
+
+            $this->callSilent('storage:link');
+            $copySuccess = File::copyDirectory(public_path('assets/img'), public_path('storage/products/dummy'));
+            if ($copySuccess) {
+                $this->info('Succesfully copied!');
+                $this->info('Dummy data installed!');
 
 
-        $this->callSilent('storage:link');
-        $copySuccess = File::copyDirectory(public_path('assets/img'), public_path('storage/products/dummy'));
-        if ($copySuccess) {
-            $this->info('Succesfully copied!');
-            $this->info('Dummy data installed!');
+                $this->call('db:create');
 
-            $this->call('migrate:fresh', [
-                '--seed' => true,
-            ]);
+                $this->call('key:generate');
 
-            $this->call('db:seed', [
-                '--class' => 'VoyagerDatabaseSeeder',
-            ]);
+                $this->call('voyager:install');
 
-            $this->call('db:seed', [
-                '--seed' => 'VoyagerDummyDatabaseSeeder',
-            ]);
+                $this->call('voyager:admin', [
+                 '--create' =>true,
+                    ]);
+                $this->call('migrate:fresh', [
+                    '--seed' => true,
+                ]);
 
-            $this->info('Dummy data installed!');
+                $this->info('You can enter into Voyager CMS if you click on the link http://localhost/Trufelo/public/admin');
+
+            } else {
+                $this->info('');
+            }
+        } else {
+            $this->info('Abort.');
         }
     }
 }

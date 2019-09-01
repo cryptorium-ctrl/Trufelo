@@ -10882,6 +10882,44 @@ body {
   }
 }
 
+@-webkit-keyframes glowEffect-after {
+  0% {
+    -webkit-filter: drop-shadow(0px 0px 10px #856936);
+            filter: drop-shadow(0px 0px 10px #856936);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
+            filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
+    border-width: 2px;
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0px 0px 10px #856936);
+            filter: drop-shadow(0px 0px 10px #856936);
+    border-width: 2px;
+  }
+}
+
+@keyframes glowEffect-after {
+  0% {
+    -webkit-filter: drop-shadow(0px 0px 10px #856936);
+            filter: drop-shadow(0px 0px 10px #856936);
+  }
+
+  50% {
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
+            filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
+    border-width: 2px;
+  }
+
+  100% {
+    -webkit-filter: drop-shadow(0px 0px 10px #856936);
+            filter: drop-shadow(0px 0px 10px #856936);
+    border-width: 2px;
+  }
+}
+
 body {
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
@@ -11281,15 +11319,28 @@ body {
   border-bottom: 2px solid #B8860B;
 }
 
+.featured-products__dark-shadow {
+  color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 5.8rem;
+  margin-top: 1.2rem;
+}
+
 .featured-products__carousel {
   margin-top: 1vh;
 }
 
-#featured-products__card-text {
+.featured-products__card-text {
+  visibility: hidden;
   opacity: 0;
 }
 
-.card:hover ~ .featured-products__card-text {
+.featured-products__img:hover ~ .featured-products__card-text {
+  visibility: visible;
   opacity: 1;
 }
 
@@ -11325,16 +11376,16 @@ body {
           perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
-  width: 75%;
+  height: 60rem;
+  width: 80%;
   margin-top: 0;
 }
 
 .card__side {
   background-color: #fff;
   color: #fff;
-  font-size: 2rem;
-  height: 50rem;
+  font-size: 5rem;
+  height: 60rem;
   transition: all 0.8s ease;
   position: absolute;
   top: 0;
@@ -11368,15 +11419,15 @@ body {
 }
 
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #777, #B8860B);
+  background-image: linear-gradient(to right bottom, #ddd5d5, #B8860B);
 }
 
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, #ddd5d5, #856936);
+  background-image: linear-gradient(to right bottom, #ddd5d5, #B8860B);
 }
 
 .card__side--back-3 {
-  background-image: linear-gradient(to right bottom, #ddd5d5, #856936);
+  background-image: linear-gradient(to right bottom, #ddd5d5, #ffb900);
 }
 
 .card:hover .card__side--front {
@@ -11391,30 +11442,30 @@ body {
 
 .card__picture {
   background-size: cover;
-  height: 23rem;
+  height: 25rem;
   background-blend-mode: screen;
 }
 
 .card__picture--1 {
-  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(/images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
+  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(../images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .card__picture--2 {
-  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(/images/truffleoil-1.jpg?f4bb0e9f6715311c8a5982cccdd62196);
+  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(../images/truffled-product.jpg?1c261f1c9abdff2cfc0093b41976a208);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .card__picture--3 {
-  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(/images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
+  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(../images/oil-package.jpg?b7c01061672e375ad69492c140b1ac35);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
 
 .card__heading {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   text-align: right;
@@ -11451,7 +11502,7 @@ body {
 .card__details-arrow {
   height: 40px;
   width: 40px;
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(133, 105, 54, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8));
   border-radius: 50%;
   margin-top: 0;
   margin-left: 45%;
@@ -11483,9 +11534,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px #000000;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem;
   margin: 1rem 1rem;
   color: #777;
@@ -11514,19 +11565,20 @@ body {
 }
 
 .navigation__nav {
-  height: 100vh;
+  height: 8vh;
   position: fixed;
-  top: 0;
+  top: -2rem;
   left: 0;
   z-index: 1500;
   opacity: 0;
   width: 0;
   transition: all 1s;
+  margin-top: 7vh;
 }
 
 .navigation__list {
   position: absolute;
-  top: 10%;
+  top: 3.5rem;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -11601,9 +11653,9 @@ body {
 .dropbtn {
   background-color: transparent;
   color: #fff;
-  padding: 1.6rem;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
+  padding: 0.5rem 2rem;
   border: none;
   cursor: pointer;
   font-family: "Times New Roman", Times, serif;
@@ -11662,7 +11714,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(133, 105, 54, 0.8)), url(/images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
+  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(133, 105, 54, 0.8)), url(../images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -11672,6 +11724,7 @@ body {
 
 .header__logo-box {
   position: absolute;
+  border-radius: 50%;
   top: -0.5rem;
   right: -1rem;
 }
@@ -11688,6 +11741,14 @@ body {
           animation-delay: 0ms;
 }
 
+.header__logo--glowEffect-after {
+  border-radius: 100px;
+  -webkit-animation: glowEffect-after 3s ease infinite;
+          animation: glowEffect-after 3s ease infinite;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -11697,78 +11758,23 @@ body {
   text-align: center;
 }
 
-.index__products--text {
-  text-transform: uppercase;
-  text-align: center;
+.index-products {
+  margin-top: 25vh;
+  margin-bottom: 20vh;
+  font-family: Lato, sans-serif;
 }
 
-.index__products--svg {
-  margin-top: 20vh;
+.index-products__overline,
+.index-products__underline {
+  width: 100vw;
+  height: 1px;
+  border-bottom: 2px solid #B8860B;
 }
 
-.index__products--svg-1 {
-  border-radius: 50%;
-  padding: 3rem;
-  border: 2px solid black;
-  fill: #ffffff;
-  height: 30%;
-  cursor: pointer;
-  background: radial-gradient(circle at center, black 66.5%, white 68%);
-  opacity: 0.85;
-}
-
-.index__products--svg-1:hover {
-  background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-  cursor: pointer;
-  border: 2px solid darkgoldenrod;
-}
-
-.index__products--svg-2 {
-  background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-  border-radius: 50%;
-  padding: 2rem;
-  border: 2px solid darkgoldenrod;
-  fill: #fff3cd;
-  height: 30%;
-  opacity: 0.85;
-}
-
-.index__products--svg-2:hover {
-  background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-  cursor: pointer;
-  border: 2px solid darkgoldenrod;
-}
-
-.index__products--svg-3 {
-  background: radial-gradient(circle at center, cadetblue 66.5%, white 68%);
-  border-radius: 50%;
-  padding: 2rem;
-  border: 2px solid cadetblue;
-  fill: #fff3cd;
-  height: 30%;
-  opacity: 0.85;
-}
-
-.index__products--svg-3:hover {
-  background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-  cursor: pointer;
-  border: 2px solid darkgoldenrod;
-}
-
-.index__products--svg-4 {
-  background: radial-gradient(circle at center, darkorange 66.5%, white 68%);
-  opacity: 0.85;
-  border-radius: 50%;
-  padding: 2rem;
-  border: 2px solid darkorange;
-  fill: #fff3cd;
-  height: 30%;
-}
-
-.index__products--svg-4:hover {
-  background: radial-gradient(circle at center, darkgoldenrod 66.5%, white 68%);
-  cursor: pointer;
-  border: 2px solid darkgoldenrod;
+.index-products__header {
+  font-size: 2rem;
+  color: #B8860B;
+  padding: 1.5rem 0 1.5rem 0;
 }
 
 .our-details {

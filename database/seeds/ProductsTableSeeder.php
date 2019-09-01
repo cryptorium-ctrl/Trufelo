@@ -32,7 +32,7 @@ class ProductsTableSeeder extends Seeder
             'price' => 50,
             'short_description' => 'Fresh Summer Truffle in a pack of 200g',
             'webPath' => 'shop.fresh-summer',
-            'image' => 'products/dummy/fresh-truffles/summer_4oz_1.png',
+            'image' => 'products/dummy/fresh-truffles/resized-summer.png',
         ]);
 
         //Fresh Winter Truffle
@@ -79,7 +79,7 @@ class ProductsTableSeeder extends Seeder
             'price' => 100,
             'short_description' => 'Fresh White Truffle in a pack of 200g',
             'webPath' => 'shop.fresh-white',
-            'image' => 'products/dummy/fresh-truffles/white_truffles_alba.png',
+            'image' => 'products/dummy/fresh-truffles/resized-white.png',
         ]);
 
         //Black Truffle Oil

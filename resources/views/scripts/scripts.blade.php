@@ -1,7 +1,7 @@
 
 @yield('truffle-scripts')
-<script src="{{URL::to('js/jquery-3.3.1.min.js')}}"></script>
-<script src="{{URL::to('node_modules/jquery-scrollify/jquery.scrollify.js') }}"></script>
+<script src="{{URL::to('public/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{URL::to('public/js/jquery-scrollify/jquery.scrollify.js') }}"></script>
 <script src="{{URL::to('bootstrap-4.3.1-dist/js/bootstrap.min.js')}}"></script>
 {{--<script src="{{URL::to('js/custom.js')}}"></script>--}}
 <script src="{{URL::to('https://use.fontawesome.com/releases/v5.8.1/js/all.js')}}"></script>

@@ -10846,76 +10846,38 @@ body {
 
 @-webkit-keyframes glowEffect {
   0% {
-    -webkit-filter: drop-shadow(0px 0px 10px #f7f7f7);
-            filter: drop-shadow(0px 0px 10px #f7f7f7);
+    -webkit-filter: drop-shadow(0px 0px 10px #eaeaea);
+            filter: drop-shadow(0px 0px 10px #eaeaea);
   }
 
   50% {
-    -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 247, 247, 0));
-            filter: drop-shadow(0px 0px 4px rgba(247, 247, 247, 0));
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(234, 234, 234, 0));
+            filter: drop-shadow(0px 0px 4px rgba(234, 234, 234, 0));
     border-width: 2px;
   }
 
   100% {
-    -webkit-filter: drop-shadow(0px 0px 10px #f7f7f7);
-            filter: drop-shadow(0px 0px 10px #f7f7f7);
+    -webkit-filter: drop-shadow(0px 0px 10px #eaeaea);
+            filter: drop-shadow(0px 0px 10px #eaeaea);
     border-width: 2px;
   }
 }
 
 @keyframes glowEffect {
   0% {
-    -webkit-filter: drop-shadow(0px 0px 10px #f7f7f7);
-            filter: drop-shadow(0px 0px 10px #f7f7f7);
+    -webkit-filter: drop-shadow(0px 0px 10px #eaeaea);
+            filter: drop-shadow(0px 0px 10px #eaeaea);
   }
 
   50% {
-    -webkit-filter: drop-shadow(0px 0px 4px rgba(247, 247, 247, 0));
-            filter: drop-shadow(0px 0px 4px rgba(247, 247, 247, 0));
+    -webkit-filter: drop-shadow(0px 0px 4px rgba(234, 234, 234, 0));
+            filter: drop-shadow(0px 0px 4px rgba(234, 234, 234, 0));
     border-width: 2px;
   }
 
   100% {
-    -webkit-filter: drop-shadow(0px 0px 10px #f7f7f7);
-            filter: drop-shadow(0px 0px 10px #f7f7f7);
-    border-width: 2px;
-  }
-}
-
-@-webkit-keyframes glowEffect-after {
-  0% {
-    -webkit-filter: drop-shadow(0px 0px 10px #856936);
-            filter: drop-shadow(0px 0px 10px #856936);
-  }
-
-  50% {
-    -webkit-filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
-            filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
-    border-width: 2px;
-  }
-
-  100% {
-    -webkit-filter: drop-shadow(0px 0px 10px #856936);
-            filter: drop-shadow(0px 0px 10px #856936);
-    border-width: 2px;
-  }
-}
-
-@keyframes glowEffect-after {
-  0% {
-    -webkit-filter: drop-shadow(0px 0px 10px #856936);
-            filter: drop-shadow(0px 0px 10px #856936);
-  }
-
-  50% {
-    -webkit-filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
-            filter: drop-shadow(0px 0px 4px rgba(133, 105, 54, 0));
-    border-width: 2px;
-  }
-
-  100% {
-    -webkit-filter: drop-shadow(0px 0px 10px #856936);
-            filter: drop-shadow(0px 0px 10px #856936);
+    -webkit-filter: drop-shadow(0px 0px 10px #eaeaea);
+            filter: drop-shadow(0px 0px 10px #eaeaea);
     border-width: 2px;
   }
 }
@@ -10968,7 +10930,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, #ddd5d5, #856936);
+  background-image: linear-gradient(to right, #d4b66c, #856936);
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.2s;
@@ -11129,12 +11091,12 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border: 2px solid #B8860B;
+  border: 2px solid #b8860b;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 1px #B8860B;
+  box-shadow: 0 1px 1px #b8860b;
   transition: all 0.2s;
   letter-spacing: 1rem;
-  color: #B8860B;
+  color: #b8860b;
   -webkit-transition: all 1s ease;
 }
 
@@ -11157,7 +11119,7 @@ body {
 
 .featured-section-btn span {
   text-decoration: none;
-  color: #B8860B;
+  color: #b8860b;
   -webkit-transform: translateX(-10%);
           transform: translateX(-10%);
 }
@@ -11173,8 +11135,8 @@ body {
   transition-property: color;
   transition-duration: 0.3s;
   text-decoration: none;
-  color: #B8860B;
-  border: 2px solid #B8860B;
+  color: #b8860b;
+  border: 2px solid #b8860b;
   padding: 1rem;
   letter-spacing: 1rem;
 }
@@ -11187,7 +11149,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #B8860B;
+  background: #b8860b;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50%;
@@ -11281,7 +11243,7 @@ body {
 }
 
 .corner-ribbon__red {
-  background: #ddae3c;
+  background: #b8860b;
 }
 
 .corner-ribbon__shadow {
@@ -11308,7 +11270,7 @@ body {
 
 .featured-products__header {
   font-size: 1.5rem;
-  color: #B8860B;
+  color: #b8860b;
   padding: 1.5rem 0 1.5rem 0;
 }
 
@@ -11316,7 +11278,7 @@ body {
 .featured-products__underline {
   width: 100vw;
   height: 1px;
-  border-bottom: 2px solid #B8860B;
+  border-bottom: 2px solid #b8860b;
 }
 
 .featured-products__dark-shadow {
@@ -11360,7 +11322,7 @@ body {
 
 .featured-recipes__header {
   font-size: 1.5rem;
-  color: #B8860B;
+  color: #b8860b;
   padding: 1.5rem 0 1.5rem 0;
 }
 
@@ -11368,7 +11330,7 @@ body {
 .featured-recipes__underline {
   width: 100vw;
   height: 1px;
-  border-bottom: 2px solid #B8860B;
+  border-bottom: 2px solid #b8860b;
 }
 
 .card {
@@ -11399,13 +11361,19 @@ body {
 }
 
 .card__side--front {
-  background-color: #f7f7f7;
+  background-color: #dadada;
 }
 
 .card__side--back {
   background-color: #fff;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.card__side--back p {
+  margin-top: 15vh;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .card__side--back--button-box {
@@ -11419,15 +11387,15 @@ body {
 }
 
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #ddd5d5, #B8860B);
+  background-image: linear-gradient(to right bottom, #d4b66c, #b8860b);
 }
 
 .card__side--back-2 {
-  background-image: linear-gradient(to right bottom, #ddd5d5, #B8860B);
+  background-image: linear-gradient(to right bottom, #d4b66c, #b8860b);
 }
 
 .card__side--back-3 {
-  background-image: linear-gradient(to right bottom, #ddd5d5, #ffb900);
+  background-image: linear-gradient(to right bottom, #d4b66c, #b8860b);
 }
 
 .card:hover .card__side--front {
@@ -11447,19 +11415,25 @@ body {
 }
 
 .card__picture--1 {
-  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(../images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
+  background-image: url(../images/fresh-truffles.jpg?2d830f38ec71dabaee2c670a1c43cae6);
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .card__picture--2 {
-  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(../images/truffled-product.jpg?1c261f1c9abdff2cfc0093b41976a208);
+  background-image: url(../images/truffled-product.jpg?1c261f1c9abdff2cfc0093b41976a208);
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .card__picture--3 {
-  background-image: linear-gradient(to right top, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8)), url(../images/oil-package.jpg?b7c01061672e375ad69492c140b1ac35);
+  background-image: url(../images/oil-package.jpg?b7c01061672e375ad69492c140b1ac35);
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
@@ -11484,15 +11458,15 @@ body {
 }
 
 .card__heading-span--1 {
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(212, 182, 108, 0.8), rgba(184, 134, 11, 0.8));
 }
 
 .card__heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(212, 182, 108, 0.8), rgba(184, 134, 11, 0.8));
 }
 
 .card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(212, 182, 108, 0.8), rgba(184, 134, 11, 0.8));
 }
 
 .card__details {
@@ -11502,10 +11476,10 @@ body {
 .card__details-arrow {
   height: 40px;
   width: 40px;
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(184, 134, 11, 0.8));
+  background-image: linear-gradient(to right bottom, rgba(212, 182, 108, 0.8), rgba(184, 134, 11, 0.8));
   border-radius: 50%;
-  margin-top: 0;
-  margin-left: 45%;
+  margin-top: 15%;
+  margin-left: 65%;
   position: absolute;
   -webkit-animation-name: bounceUp;
           animation-name: bounceUp;
@@ -11521,7 +11495,8 @@ body {
 
 .card__details-arrow-pic {
   height: 2rem;
-  margin-top: 25%;
+  margin-bottom: 5.3rem;
+  margin-left: 1rem;
 }
 
 .card__details ul {
@@ -11530,21 +11505,28 @@ body {
   margin: 0 auto;
 }
 
-.card__details ul li {
+.card__details ul li:not(:last-child) {
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px #000000;
   font-family: Lato, sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 2rem;
   padding: 1rem;
   margin: 1rem 1rem;
-  color: #777;
+  color: #fff;
   position: relative;
+  z-index: 500;
+  border-radius: 100px;
+  background-image: linear-gradient(to right bottom, #d4b66c, #b8860b);
 }
 
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #eee;
+.card__details ul li:not(:last-child):not(:last-child) {
+  border-bottom: 1px solid #ddd5d5;
+}
+
+.navigation {
+  position: absolute;
 }
 
 .navigation__checkbox {
@@ -11552,33 +11534,47 @@ body {
 }
 
 .navigation__button {
+  background-color: none;
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
   position: fixed;
-  top: 5rem;
+  top: 6rem;
   right: 6rem;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  display: inline;
   cursor: pointer;
 }
 
-.navigation__nav {
-  height: 8vh;
+.navigation__background {
+  visibility: hidden;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
   position: fixed;
-  top: -2rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 1000;
+  transition: -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 35vh;
   left: 0;
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: all 1s;
-  margin-top: 7vh;
+  transition: all 0.5s ease-in-out;
 }
 
 .navigation__list {
   position: absolute;
-  top: 3.5rem;
+  top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -11587,41 +11583,18 @@ body {
   width: 100%;
 }
 
-.navigation__list-dropdown {
-  display: inline;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-}
-
-.navigation__list-dropdown:hover {
-  display: inline;
-  opacity: 1;
-  visibility: visible;
-  position: absolute;
-}
-
 .navigation__item {
   margin: 1rem;
-  display: inline;
-}
-
-.navigation__item-dropdown-content {
-  visibility: hidden;
-}
-
-.navigation__item-dropdown:hover .navigation__item-dropdown-content:hover {
-  visibility: visible;
-  z-index: 9999;
-  opacity: 1;
 }
 
 .navigation__link:link,
+.navigation__link--second,
 .navigation__link:visited {
-  width: 100%;
+  width: 20%;
+  display: inline-block;
   flex-direction: row;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
   color: #fff;
@@ -11633,6 +11606,7 @@ body {
 }
 
 .navigation__link:hover,
+.navigation__link-second:hover,
 .navigation__link:active {
   background-position: 100%;
   color: #000;
@@ -11641,6 +11615,7 @@ body {
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
+  visibility: visible;
   -webkit-transform: scale(80);
           transform: scale(80);
 }
@@ -11650,74 +11625,13 @@ body {
   width: 100%;
 }
 
-.dropbtn {
-  background-color: transparent;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 0.5rem 2rem;
-  border: none;
-  cursor: pointer;
-  font-family: "Times New Roman", Times, serif;
-}
-
-/* The container <div> - needed to position the dropdown content */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  text-transform: uppercase;
-}
-
-.dropdown-content {
-  /* Dropdown Content (Hidden by Default) */
-  display: none;
-  position: absolute;
-  min-width: 25rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  /* Links inside the dropdown */
-  color: #fff;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  /* Change color of dropdown links on hover */
-  color: #000;
-  background-image: linear-gradient(110deg, transparent 0%, transparent 50%, #fff 50%);
-  transition: all 0.4s;
-  background-position: 100%;
-  background-size: 220%;
-}
-
-.dropdown:hover .dropdown-content {
-  /* Show the dropdown menu on hover */
-  display: block;
-  color: #000;
-  background-size: 220%;
-}
-
-.dropdown:hover .dropbtn {
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  background-color: none;
-  background-image: linear-gradient(110deg, transparent 0%, transparent 50%, #fff 50%);
-  color: #000;
-  transition: all 0.4s;
-  background-position: 100%;
-  background-size: 220%;
-}
-
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.8), rgba(133, 105, 54, 0.8)), url(../images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
   background-size: cover;
   background-position: top;
   position: relative;
+  background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
@@ -11725,8 +11639,8 @@ body {
 .header__logo-box {
   position: absolute;
   border-radius: 50%;
+  right: -0.4rem;
   top: -0.5rem;
-  right: -1rem;
 }
 
 .header__logo {
@@ -11788,12 +11702,12 @@ body {
 }
 
 .our-details a:hover {
-  color: #B8860B;
+  color: #b8860b;
 }
 
 .our-details h4 {
   text-transform: uppercase;
-  color: #B8860B;
+  color: #b8860b;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -11860,7 +11774,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(221, 213, 213, 0.81), rgba(133, 105, 54, 0.81)), url(/images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
+  background-image: linear-gradient(to right bottom, rgba(212, 182, 108, 0.81), rgba(133, 105, 54, 0.81)), url(/images/truffle.jpg?27208968e1f26fcdf2fdd808c0dba9fd);
   background-size: cover;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);

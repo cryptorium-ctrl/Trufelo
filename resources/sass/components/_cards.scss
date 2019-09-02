@@ -35,6 +35,12 @@
       background-color: #fff;
       transform: rotateY(180deg);
 
+      & p {
+          margin-top: 15vh;
+          font-size: 2rem;
+          text-align: center;
+      }
+
       &--button-box {
         position: absolute;
         top: 80%;
@@ -64,7 +70,7 @@
             background-image: linear-gradient(
                     to right bottom,
                     $color-primary-light,
-                    $color-secondary-light
+                    $color-secondary-darker
             );
         }
     }
@@ -85,37 +91,25 @@
     background-blend-mode: screen;
 
     &--1 {
-      background-image: linear-gradient(
-                      to right top,
-                      rgba($color-primary-light, 0.8),
-                      rgba($color-secondary-darker, 0.8)
-      ),
-      url('../img/truffle.jpg');
-
+      background-image: url('../img/fresh-truffles.jpg');
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
 
     &--2 {
-      background-image: linear-gradient(
-                      to right top,
-              rgba($color-primary-light, 0.8),
-              rgba($color-secondary-darker, 0.8)
-      ),
-      url('../img/truffled-product.jpg');
-
+      background-image: url('../img/truffled-product.jpg');
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     &--3 {
-      background-image: linear-gradient(
-                      to right top,
-              rgba($color-primary-light, 0.8),
-              rgba($color-secondary-darker, 0.8)
-      ),
-      url('../img/oil-package.jpg');
-
+      background-image: url('../img/oil-package.jpg');
+      -webkit-filter: brightness(80%);
+      filter: brightness(80%);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     }
@@ -176,8 +170,8 @@
       );
       border-radius: 50%;
       // display: inline-block;
-      margin-top: 0;
-      margin-left: 45%;
+      margin-top: 15%;
+      margin-left: 65%;
       position: absolute;
 
       animation-name: bounceUp;
@@ -188,7 +182,8 @@
 
       &-pic {
         height: 2rem;
-        margin-top: 25%;
+        margin-bottom: 5.3rem;
+        margin-left: 1rem;
       }
     }
 
@@ -197,19 +192,23 @@
       width: 80%;
       margin: 0 auto;
 
-      li {
+      li:not(:last-child) {
         text-align: center;
         text-transform: uppercase;
         text-shadow: 2px #000000;
         font-family: Lato, sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 2rem;
         padding: 1rem;
         margin: 1rem 1rem;
-        color: $color-gray-dark;
+        color: $color-white;
         position: relative;
-
-
+        z-index: 500;
+        border-radius: 100px;
+        background-image: linear-gradient(
+                  to right bottom,
+                  $color-primary-light,
+                  $color-secondary-darker);
         &:not(:last-child) {
           border-bottom: 1px solid $color-gray-light-2;
         }

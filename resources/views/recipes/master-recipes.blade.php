@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>@yield('title')</title>
-
-    <link rel="stylesheet" href="../../bootstrap-4.3.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../css/icofont.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    @include('styles.style')
+    @section('fresh-truffle-style')
+    @stop
 
 </head>
 
-@include('partials.header')
-
 <body>
+
+@include('partials.header')
 
 @foreach($recipes as $recipe)
 <div class="container">

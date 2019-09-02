@@ -13,9 +13,10 @@
 
 </head>
 
+<body>
+
 @include('partials.header')
 
-<body>
     <main>
         <section>
             <div class="row justify-content-center" style="margin-top: 8rem;">

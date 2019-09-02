@@ -14,9 +14,9 @@
     @stop
 </head>
 
-@include('partials.second-header')
-
 <body data-spy="scroll" data-target="#navbarResponsive">
+
+@include('partials.second-header')
 
 @yield('content')
 @foreach($products as $product)

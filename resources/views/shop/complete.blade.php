@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
     @yield('style.blade.php')
-
-    @include('partials.header')
     @include('styles.style')
     @section('truffle-style')
     @stop
@@ -16,6 +14,8 @@
 </head>
 
 <body>
+
+@include('partials.header')
 
 <div class="col-md-6" style="margin: 10% auto;">
     <h4 class="text-center">Thank You For Your Order</h4>

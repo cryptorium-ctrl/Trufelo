@@ -13,9 +13,10 @@
 
 </head>
 
+<body>
+
 @include('partials.header')
 
-<body>
 <div class="row justify-content-center" style="margin-top: 8rem;">
         <div class="col-md-6">
              <h1 class="text-center">FRESH TRUFFLES</h1>

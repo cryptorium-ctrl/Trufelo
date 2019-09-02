@@ -13,9 +13,9 @@
 
 </head>
 
-@include('partials.header')
-
 <body>
+
+@include('partials.header')
 
 @foreach($products as $product)
     @if($product->name == 'Black Truffle Oil')

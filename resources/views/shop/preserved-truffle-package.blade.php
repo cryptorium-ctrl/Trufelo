@@ -12,9 +12,10 @@
     @stop
 </head>
 
+<body>
+
 @include('partials.header')
 
-<body data-spy="scroll" data-target="#navbarResponsive">
 @foreach($products as $product)
 
     @if($product->name == "Preserved Truffle Package")

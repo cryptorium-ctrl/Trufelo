@@ -12,9 +12,9 @@
 
 </head>
 
-@include('partials.header')
-
 <body>
+
+@include('partials.header')
 
 <div class="row-recipes">
     <div class="column-recipes" > <!--- First Column --->

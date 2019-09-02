@@ -3,7 +3,6 @@
     <div class="row justify-content-center">
         <span class="featured-products__overline"></span>
             <h3 class="featured-products__header"> Sign up and receive discount codes, free samples and many promotions! <a href="#" class="hvr-shutter-out-vertical ml-5">SIGNUP</a></h3>
-        <span class="featured-products__dark-shadow"></span>
         <span class="featured-products__underline"></span>
     </div>
         <div class="row justify-content-center">
